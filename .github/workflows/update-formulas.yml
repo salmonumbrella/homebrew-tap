@@ -1,0 +1,139 @@
+name: Update Formulas
+
+on:
+  schedule:
+    - cron: '0 9 * * *' # Daily at 9am UTC
+  workflow_dispatch: # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update formulas
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+
+          UPDATED_FORMULAS=""
+
+          for formula in Formula/*.rb; do
+            [ -f "$formula" ] || continue
+
+            FORMULA_NAME=$(basename "$formula" .rb)
+            echo "::group::Checking $FORMULA_NAME"
+
+            # Extract homepage URL and derive owner/repo
+            HOMEPAGE=$(grep -m1 'homepage' "$formula" | sed 's/.*homepage "\([^"]*\)".*/\1/')
+            if [[ ! "$HOMEPAGE" =~ github\.com/([^/]+)/([^/\"]+) ]]; then
+              echo "Skipping $FORMULA_NAME: homepage not a GitHub URL"
+              echo "::endgroup::"
+              continue
+            fi
+
+            OWNER="${BASH_REMATCH[1]}"
+            REPO="${BASH_REMATCH[2]}"
+            echo "Upstream: $OWNER/$REPO"
+
+            # Get latest release
+            RELEASE_JSON=$(gh api "repos/$OWNER/$REPO/releases/latest" 2>/dev/null || echo "")
+            if [ -z "$RELEASE_JSON" ]; then
+              echo "Skipping $FORMULA_NAME: no releases found"
+              echo "::endgroup::"
+              continue
+            fi
+
+            TAG=$(echo "$RELEASE_JSON" | jq -r '.tag_name')
+            LATEST_VERSION="${TAG#v}"
+
+            # Get current version
+            CURRENT_VERSION=$(grep -m1 'version "' "$formula" | sed 's/.*version "\([^"]*\)".*/\1/')
+
+            echo "Current: $CURRENT_VERSION, Latest: $LATEST_VERSION"
+
+            if [ "$CURRENT_VERSION" = "$LATEST_VERSION" ]; then
+              echo "Already up to date"
+              echo "::endgroup::"
+              continue
+            fi
+
+            echo "Update available!"
+
+            # Find and download checksums file
+            CHECKSUMS_URL=$(echo "$RELEASE_JSON" | jq -r '.assets[] | select(.name | test("checksums\\.txt$")) | .browser_download_url' | head -1)
+            if [ -z "$CHECKSUMS_URL" ] || [ "$CHECKSUMS_URL" = "null" ]; then
+              echo "Skipping $FORMULA_NAME: no checksums file found in release"
+              echo "::endgroup::"
+              continue
+            fi
+
+            echo "Downloading checksums from: $CHECKSUMS_URL"
+            CHECKSUMS=$(curl -sL "$CHECKSUMS_URL")
+
+            # Extract SHAs from checksums file
+            # All formulas follow GoReleaser naming: tool_[version_]os_arch.tar.gz
+            SHA_DARWIN_ARM64=$(echo "$CHECKSUMS" | grep -iE "(darwin|macos).*arm64" | grep -v "\.txt" | awk '{print $1}' | head -1)
+            SHA_DARWIN_AMD64=$(echo "$CHECKSUMS" | grep -iE "(darwin|macos).*(amd64|x86_64)" | grep -v "\.txt" | awk '{print $1}' | head -1)
+            SHA_LINUX_ARM64=$(echo "$CHECKSUMS" | grep -iE "linux.*arm64" | grep -v "\.txt" | awk '{print $1}' | head -1)
+            SHA_LINUX_AMD64=$(echo "$CHECKSUMS" | grep -iE "linux.*(amd64|x86_64)" | grep -v "\.txt" | awk '{print $1}' | head -1)
+
+            echo "SHAs found:"
+            echo "  darwin_arm64: $SHA_DARWIN_ARM64"
+            echo "  darwin_amd64: $SHA_DARWIN_AMD64"
+            echo "  linux_arm64: $SHA_LINUX_ARM64"
+            echo "  linux_amd64: $SHA_LINUX_AMD64"
+
+            # Validate all 4 SHAs were found
+            if [ -z "$SHA_DARWIN_ARM64" ] || [ -z "$SHA_DARWIN_AMD64" ] || [ -z "$SHA_LINUX_ARM64" ] || [ -z "$SHA_LINUX_AMD64" ]; then
+              echo "ERROR: Missing SHAs, skipping update for safety"
+              echo "::endgroup::"
+              continue
+            fi
+
+            # Update version
+            sed -i "s/version \"$CURRENT_VERSION\"/version \"$LATEST_VERSION\"/" "$formula"
+
+            # Update URLs - handle both versioned and unversioned patterns
+            # For versioned URLs like: fastmail_0.4.0_darwin_arm64.tar.gz
+            sed -i "s|_${CURRENT_VERSION}_|_${LATEST_VERSION}_|g" "$formula"
+            # For all URLs: replace version in path
+            sed -i "s|/v$CURRENT_VERSION/|/v$LATEST_VERSION/|g" "$formula"
+
+            # Update SHAs using positional replacement
+            # All formulas have consistent structure with exactly 4 sha256 lines in order:
+            # 1st: darwin arm64, 2nd: darwin amd64, 3rd: linux arm64, 4th: linux amd64
+            awk -v s1="$SHA_DARWIN_ARM64" -v s2="$SHA_DARWIN_AMD64" -v s3="$SHA_LINUX_ARM64" -v s4="$SHA_LINUX_AMD64" '
+              /sha256/ {
+                count++
+                if (count == 1) { sub(/"[^"]*"/, "\"" s1 "\""); print; next }
+                if (count == 2) { sub(/"[^"]*"/, "\"" s2 "\""); print; next }
+                if (count == 3) { sub(/"[^"]*"/, "\"" s3 "\""); print; next }
+                if (count == 4) { sub(/"[^"]*"/, "\"" s4 "\""); print; next }
+              }
+              { print }
+            ' "$formula" > "$formula.tmp" && mv "$formula.tmp" "$formula"
+
+            UPDATED_FORMULAS="$UPDATED_FORMULAS $FORMULA_NAME($CURRENT_VERSION→$LATEST_VERSION)"
+            echo "::endgroup::"
+          done
+
+          if [ -z "$UPDATED_FORMULAS" ]; then
+            echo "No updates found"
+            exit 0
+          fi
+
+          echo "UPDATED_FORMULAS=$UPDATED_FORMULAS" >> $GITHUB_ENV
+
+      - name: Commit and push
+        if: env.UPDATED_FORMULAS != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Formula/
+          git commit -m "chore: update formulas -${{ env.UPDATED_FORMULAS }}"
+          git push

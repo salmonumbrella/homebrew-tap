@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Audit formulas
+        run: |
+          set -e
+          for formula in Formula/*.rb; do
+            formula_name=$(basename "$formula" .rb)
+            brew audit --strict "$formula_name"
+          done
+
+      - name: Test formulas (style only)
+        run: |
+          set -e
+          for formula in Formula/*.rb; do
+            brew style "$formula"
+          done
