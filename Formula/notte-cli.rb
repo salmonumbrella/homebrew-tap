@@ -7,22 +7,22 @@ class NotteCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1583e1addecb9d16809ad76fa81105e7f8f2591b3e40ea0533e6f4bb125e342c"
+      sha256 "eccd9b31a7f3c9b5414e5ad08efb6ff7acc9da6b2c792b0fa1ea50ec3fe9202d"
     end
     on_intel do
       url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ca129daf0e655901a29fbb0dc87c10646955d7b1f8905639125e40e3522136d9"
+      sha256 "ac89c92d3645d45b429d82c03b23c32896e1f9b05cc2d5ba0e27b420b64af59e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "9d6a7da23fcfa7bedc160b3db327d0a3b9bc6c916467ffe523924f4c40cdb85b"
+      sha256 "70949a2166c8840b9409af525c45b774db4038a4d6c6d1635f8a7e5910c92ba5"
     end
     on_intel do
       url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "4b7af36e304cdeeecf37311361cc675e0ef991f2a39dfce9c3db82cc0d9e2920"
+      sha256 "92f7c42c6e7b652b7cb31e396165d1c09b0d896dc6dd9d222c7cd187e8680c73"
     end
   end
 
@@ -31,6 +31,6 @@ class NotteCli < Formula
   end
 
   test do
-    assert_match "notte", shell_output("#{bin}/notte --help")
+    system "#{bin}/notte", "--help"
   end
 end

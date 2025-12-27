@@ -7,22 +7,22 @@ class AirwallexCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.0/airwallex-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4c698061a50414876cd45a0c326b01b2589c1c3a59abe680b30260190b47d8c4"
+      sha256 "c04643b8db7728c283f6b015500bc7502a8131de6b8f22f9e6ca484c0251d562"
     end
     on_intel do
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.0/airwallex-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "68c09dfa08c77fd5faa3031048548dc2e8daca71eaebbd5a736927cc4d8cff70"
+      sha256 "d8371afe4036098b911e48c5d9f894e2ea19b7b286f7dcb4a387e3973a9ae53a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.0/airwallex-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "7071a42554f4a2c8357602ceff667f8ba181efc804292b115d887fb21f62f8fb"
+      sha256 "6c60d518b80d06d464368ab448adcc91011a12c8c5035e8f98b73a14141b3a1b"
     end
     on_intel do
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.0/airwallex-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "38225219a0542bbbd6967e6ba67922c306d15106fd875e5f6022d00c76f347c4"
+      sha256 "2fea13f6a6fea51c638713ec440925fd74ff678fba2d82e4295a2295674f1bf3"
     end
   end
 
@@ -31,6 +31,6 @@ class AirwallexCli < Formula
   end
 
   test do
-    assert_match "airwallex", shell_output("#{bin}/airwallex --help")
+    system "#{bin}/airwallex", "--help"
   end
 end

@@ -6,23 +6,23 @@ class BeeperCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-0.1.0-darwin-arm64.tar.gz"
-      sha256 "2ddde357de19847b6e2cd06bc352b270a2646ed537da366747427ed9cc618fc5"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-cli_0.1.0_darwin_arm64.tar.gz"
+      sha256 "8a3ecd078b0747fe6a8ebcab25f24b0b1d14a9b6c0562c1561ee88176fa069f2"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-0.1.0-darwin-amd64.tar.gz"
-      sha256 "6ffe3a6fc7fdcff8821b7bdd705439355346d2ada65a3d59daae89e3c37149f9"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-cli_0.1.0_darwin_amd64.tar.gz"
+      sha256 "76683d3744893d5777549b3e4e0cef4baac14002547e127f7d0b6b921b55364a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-0.1.0-linux-arm64.tar.gz"
-      sha256 "3a38dc0765ab26ea276102308c5b775595947b979d322985f8a6c78bf7d65eba"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-cli_0.1.0_linux_arm64.tar.gz"
+      sha256 "21cc970b529602cb4f9ce9b9ee7fcca7a24b276bd27f46432b678f3bdd6dea69"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-0.1.0-linux-amd64.tar.gz"
-      sha256 "2a62cbb2b1125738414ed3d30cc8ae251a474bd353cce221ab2735f25ed06722"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.0/beeper-cli_0.1.0_linux_amd64.tar.gz"
+      sha256 "c2df2792cce443cbbb792ce1e30850e08c817c3f5b12212de9fde5ba20e04bdf"
     end
   end
 
@@ -31,6 +31,6 @@ class BeeperCli < Formula
   end
 
   test do
-    assert_match "beeper", shell_output("#{bin}/beeper --help")
+    system "#{bin}/beeper", "--help"
   end
 end

@@ -1,28 +1,28 @@
 class NotionCli < Formula
-  desc "CLI for Notion"
+  desc "CLI for Notion to manage pages, databases, and blocks"
   homepage "https://github.com/salmonumbrella/notion-cli"
-  version "0.4.0"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.4.0/notion_darwin_arm64.tar.gz"
-      sha256 "89eec0a7ac8336ee19fc00b41bf31830995262ea2f81cb9272b005ea0f5ff3d0"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.1.0/notion_darwin_arm64.tar.gz"
+      sha256 "1e6bfc727203c258c881f13421da7ea8ee0e14b162234acc2d1c98699fcf9974"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.4.0/notion_darwin_amd64.tar.gz"
-      sha256 "d46f1a7821d1fccc0d2034a682d8f5811e26d52a30658902ec2cffc0decdac2a"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.1.0/notion_darwin_amd64.tar.gz"
+      sha256 "c07e87f3c45b08b2a02e701c62dfb5927be46c15105b2494315dcef2c52bf633"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.4.0/notion_linux_arm64.tar.gz"
-      sha256 "cf02087a01c63f916f16d8d7d739f28c1133291028e6ee99600504765acb8f63"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.1.0/notion_linux_arm64.tar.gz"
+      sha256 "32132db12a38f453e5d5d9efe43b11234d75ed0ce29e35be34ce1365bebcdc8d"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.4.0/notion_linux_amd64.tar.gz"
-      sha256 "67cfda626f0c923f7ebc08c42a9f71ed80297f3b98e5599c00d4c1c154b212ab"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.1.0/notion_linux_amd64.tar.gz"
+      sha256 "351f1456e662f82ec7fa85674cee075e754c5de59ee3b7800ad74ea5aa17f6fe"
     end
   end
 
@@ -31,6 +31,6 @@ class NotionCli < Formula
   end
 
   test do
-    assert_match "notion", shell_output("#{bin}/notion --help")
+    system "#{bin}/notion", "--help"
   end
 end

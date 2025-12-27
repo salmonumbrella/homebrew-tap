@@ -7,22 +7,22 @@ class DeelCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.1.0/deel_0.1.0_darwin_arm64.tar.gz"
-      sha256 "263f74b35f346751bb3e551be980e47d72166895b06ae35ab3daa18f36d006fd"
+      sha256 "f4a0b6f21cecac6805d92490f2586c7bc491e69e5cb76e92150cb7971485356f"
     end
     on_intel do
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.1.0/deel_0.1.0_darwin_amd64.tar.gz"
-      sha256 "99db278836d52e250ce6a858f6ea9ff6d324a8de58ad02bb4088b00bc52aa312"
+      sha256 "0574c703880f38487db5513b44a7528fad5bb4a1c5858bffa29becc49888545d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.1.0/deel_0.1.0_linux_arm64.tar.gz"
-      sha256 "21323b48f0c7dc259e3b536a0670d3e29077c7ea6374cc7b220cc130a1ff241d"
+      sha256 "c4cccb4c606dd7cdec523698b8391c3edf67ad371f1333bc2171da7482f4cf24"
     end
     on_intel do
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.1.0/deel_0.1.0_linux_amd64.tar.gz"
-      sha256 "2a82d8c93ccbb9911b9d06f4be48b3391609175f5f769fd7e90bc3257aa8a444"
+      sha256 "b2ba4b5e5978aebf440446200b9ffa4b3738cf467148d3f3a0aa609158ae7a43"
     end
   end
 
@@ -31,6 +31,6 @@ class DeelCli < Formula
   end
 
   test do
-    assert_match "deel", shell_output("#{bin}/deel --help")
+    system "#{bin}/deel", "--help"
   end
 end

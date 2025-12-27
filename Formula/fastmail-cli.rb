@@ -1,28 +1,28 @@
 class FastmailCli < Formula
-  desc "Command-line interface for Fastmail email and masked email management"
+  desc "CLI for Fastmail to manage emails, folders, and masked addresses"
   homepage "https://github.com/salmonumbrella/fastmail-cli"
-  version "0.5.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.5.0/fastmail_0.5.0_darwin_arm64.tar.gz"
-      sha256 "9a9a07f50d4de9543b64f88cb9c2466e0d3fb4cc010309aec8c0b72a24c235cf"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.1/fastmail_0.1.1_darwin_arm64.tar.gz"
+      sha256 "0c2244aad453cc9f69beab937318a1239d321cbc05c800e137043a4c6bb75f03"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.5.0/fastmail_0.5.0_darwin_amd64.tar.gz"
-      sha256 "2278f54a1ac3d1c7b4381776247f4a2515f89226d7f233c4678c5481c88d32ed"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.1/fastmail_0.1.1_darwin_amd64.tar.gz"
+      sha256 "0e5dde0ddaa9e63ca9721ab5672d4882898481f21b0e734b3f4b5926c02b5b85"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.5.0/fastmail_0.5.0_linux_arm64.tar.gz"
-      sha256 "a8e0875672539d4d219897153d334ba2b9fa9386045169cf1eedbbf5068da13f"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.1/fastmail_0.1.1_linux_arm64.tar.gz"
+      sha256 "ef2a74cc96f691493deb86d7a35a661b6ef5dafb038d573e3b60ed735df8f2e5"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.5.0/fastmail_0.5.0_linux_amd64.tar.gz"
-      sha256 "3274b6cb58b9807595655aea4a1605f2b6c2dc9c22d2a839f7b6e3db72f17dd6"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.1/fastmail_0.1.1_linux_amd64.tar.gz"
+      sha256 "0084628263b913b11abf7c62bf47abccceb8daaf053fdccb93eabc6ec5139e77"
     end
   end
 
@@ -31,6 +31,6 @@ class FastmailCli < Formula
   end
 
   test do
-    system "#{bin}/fastmail", "--version"
+    system "#{bin}/fastmail", "--help"
   end
 end
