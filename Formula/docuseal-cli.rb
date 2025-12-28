@@ -1,28 +1,28 @@
 class DocusealCli < Formula
   desc "CLI for DocuSeal to manage documents, submissions, and templates"
   homepage "https://github.com/salmonumbrella/docuseal-cli"
-  version "0.1.1"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.1.1/docuseal_0.1.1_darwin_arm64.tar.gz"
-      sha256 "f22747e98fdbfaeb180c88bc15fe113160fe8662d85458deaaf53ddb94df421d"
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.1/docuseal_0.2.1_darwin_arm64.tar.gz"
+      sha256 "a2ee241176bc5a73464f2bdb51b26202ae97cf18ca4ad61b2a979ad5ee59cf6e"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.1.1/docuseal_0.1.1_darwin_amd64.tar.gz"
-      sha256 "e12cdb4d3ee8ad7363482fe4f58f7601de2a7dcf3ffb4268305a5559538e9fc7"
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.1/docuseal_0.2.1_darwin_amd64.tar.gz"
+      sha256 "c9276b5c4a8a5e5d31b854fec3d203f23f2639b27198a80ba3fbe5b564dcf166"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.1.1/docuseal_0.1.1_linux_arm64.tar.gz"
-      sha256 "838fdafcfed0ac3fb0b41d5532e14b8f453fcecf44fcef19f12cbdb95c695da1"
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.1/docuseal_0.2.1_linux_arm64.tar.gz"
+      sha256 "45d4ed874a2f7772d1b02693bdcb42ed185ed43db41f3176a7372acf7b107e8d"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.1.1/docuseal_0.1.1_linux_amd64.tar.gz"
-      sha256 "0f6ab6d5576e166d3ad2bde482ef88eeba897fc98e82110566ae74669e2c0cbf"
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.1/docuseal_0.2.1_linux_amd64.tar.gz"
+      sha256 "6920c900b4b1c562e82b7120c13c1816aff26da146dbbd2df69372e476b2e19b"
     end
   end
 

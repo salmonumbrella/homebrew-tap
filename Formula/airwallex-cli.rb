@@ -1,28 +1,28 @@
 class AirwallexCli < Formula
   desc "CLI for Airwallex to manage transfers, beneficiaries, and balances"
   homepage "https://github.com/salmonumbrella/airwallex-cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.3/airwallex-cli_0.1.3_darwin_arm64.tar.gz"
-      sha256 "34b07fb6ade50a5dea8f48098fcf636ef103afdc934f5aadb2d44b35570161b0"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.4/airwallex-cli_0.1.4_darwin_arm64.tar.gz"
+      sha256 "caf48d29d9ff8fff98610f3ec207fbf9b3c9f9268fdd18bb0820cfea1aa2a6d4"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.3/airwallex-cli_0.1.3_darwin_amd64.tar.gz"
-      sha256 "938ba4f181e8a2ec3e566f06b630fe79b1aa09657968f37649f60a6301f468e3"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.4/airwallex-cli_0.1.4_darwin_amd64.tar.gz"
+      sha256 "6aaf85f190ba985cf19d90136b514dbb8a79e13fe8634d527a89870271b3f358"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.3/airwallex-cli_0.1.3_linux_arm64.tar.gz"
-      sha256 "1801ec849c417a46e96b062cb0d2a7bf31ee5174437c7ce5803f03295b60c8f2"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.4/airwallex-cli_0.1.4_linux_arm64.tar.gz"
+      sha256 "098fcec08e9cf9896146dd3a55052aa4d97faace67eec1e17d47b890f4694245"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.3/airwallex-cli_0.1.3_linux_amd64.tar.gz"
-      sha256 "65b1c4645f5d861c62bfe1855622a1dffbf7ddd0b96494835a554c8c86476e35"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.1.4/airwallex-cli_0.1.4_linux_amd64.tar.gz"
+      sha256 "c988a0eddc582d2ac0bc45ee77a8353f13d11c95b505777fcda687ebc794c6f8"
     end
   end
 
