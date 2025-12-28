@@ -1,28 +1,28 @@
 class NotteCli < Formula
   desc "CLI for Notte to automate browsers, extract data, and run tasks"
   homepage "https://github.com/salmonumbrella/notte-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "eccd9b31a7f3c9b5414e5ad08efb6ff7acc9da6b2c792b0fa1ea50ec3fe9202d"
+      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.1/notte-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "530a7951c1adad871189a34426d2d3fee01dc63694d5da20976906fc168fd9d9"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ac89c92d3645d45b429d82c03b23c32896e1f9b05cc2d5ba0e27b420b64af59e"
+      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.1/notte-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "4d58dab2b97f85113b24e4058542470d4f50a70a70bdfc11cb4950b29713b99f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "70949a2166c8840b9409af525c45b774db4038a4d6c6d1635f8a7e5910c92ba5"
+      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.1/notte-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "91afb85228e0d6eeacff9f929abf6efa638de2ff3cec7b4063a7b5a10473e742"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.0/notte-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "92f7c42c6e7b652b7cb31e396165d1c09b0d896dc6dd9d222c7cd187e8680c73"
+      url "https://github.com/salmonumbrella/notte-cli/releases/download/v0.1.1/notte-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "56509e9ab06fb143fd04439db2802982773e30e51aeddf9e0ba0079abfa05744"
     end
   end
 
