@@ -1,28 +1,28 @@
 class BrandfetchCli < Formula
   desc "CLI for Brandfetch to fetch logos, colors, and brand assets"
   homepage "https://github.com/salmonumbrella/brandfetch-cli"
-  version "0.1.0"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.0/brandfetch_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9fa2f7ac642bd8db4c11ffcc9e38da430a4d520695cfbd269e29e3176004ce9f"
+      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.2/brandfetch_0.1.2_darwin_arm64.tar.gz"
+      sha256 "02080652cb8a2afb8dabd0b7f75e63d9546591ad5aacd875abb08f790ccff13a"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.0/brandfetch_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a966aa6f824d15739e1c90997e394b8f8cfc3134ab805fbba9d6cf182306bf77"
+      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.2/brandfetch_0.1.2_darwin_amd64.tar.gz"
+      sha256 "e553ae4bf922a13ec6044764d3bba8bdb7247bb11d4d62546a5ef9455f1c74cb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.0/brandfetch_0.1.0_linux_arm64.tar.gz"
-      sha256 "624698cff2c6cef0772fee70b0c9b2bb1e3acb5ff67a74a0c689fd908f75c8e1"
+      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.2/brandfetch_0.1.2_linux_arm64.tar.gz"
+      sha256 "2143c53d8499d09f0c820a059607d15290b45e71a5c9dea646c9e286dbd78868"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.0/brandfetch_0.1.0_linux_amd64.tar.gz"
-      sha256 "a6d6aa896a1ca1bd2898eef45f74f19c540659556e78067cc671b73de9d41d60"
+      url "https://github.com/salmonumbrella/brandfetch-cli/releases/download/v0.1.2/brandfetch_0.1.2_linux_amd64.tar.gz"
+      sha256 "b26555671882322d99eefed695fe4aab0f50f13ced9883276fd525a6bc0941f0"
     end
   end
 
