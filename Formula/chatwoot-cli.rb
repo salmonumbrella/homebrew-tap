@@ -1,28 +1,28 @@
 class ChatwootCli < Formula
   desc "CLI for Chatwoot to manage conversations, contacts, and inboxes"
   homepage "https://github.com/salmonumbrella/chatwoot-cli"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.2/chatwoot-cli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "7b9a2d5b0c193090da59e6f4f4f5edf5ecf0b7f110ea48a24e57ac2b95502699"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.3/chatwoot-cli_0.1.3_darwin_arm64.tar.gz"
+      sha256 "f13291e346f71fe50c94805f46f41c40e1d5e9b6ad50363675be027c88209f1a"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.2/chatwoot-cli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "381a394f6d91c3056482065d4eb89fb43460a0a1a283727f43fb338898967498"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.3/chatwoot-cli_0.1.3_darwin_amd64.tar.gz"
+      sha256 "5f40c2ba8359a838f6daf3b008f3c33fa12e84155a4d29f843fee6465dc440d6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.2/chatwoot-cli_0.1.2_linux_arm64.tar.gz"
-      sha256 "1026339ac485d33758521619a2008fbe0e718fed12764a16183be24e938f8704"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.3/chatwoot-cli_0.1.3_linux_arm64.tar.gz"
+      sha256 "befa70ea33f616b9dd1070226e00a85068919526c4c3607f7364e277517c6ff1"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.2/chatwoot-cli_0.1.2_linux_amd64.tar.gz"
-      sha256 "a27d14b28663ed3ab28c07fdcfac16a658d1a0150c5632de25a4c6a5b080745a"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.1.3/chatwoot-cli_0.1.3_linux_amd64.tar.gz"
+      sha256 "8e954615ee1ce5bda829fc066094604c211e0a786d6ef1a9a93365f0b013be50"
     end
   end
 
