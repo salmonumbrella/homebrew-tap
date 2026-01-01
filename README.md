@@ -14,6 +14,7 @@ brew install salmonumbrella/tap/brandfetch-cli
 brew install salmonumbrella/tap/chatwoot-cli
 brew install salmonumbrella/tap/deel-cli
 brew install salmonumbrella/tap/deputy-cli
+brew install salmonumbrella/tap/dub-cli
 brew install salmonumbrella/tap/docuseal-cli
 brew install salmonumbrella/tap/eightsleep-cli
 brew install salmonumbrella/tap/fastmail-cli
@@ -32,6 +33,7 @@ brew install salmonumbrella/tap/notte-cli
 | **chatwoot-cli** | CLI for Chatwoot to manage conversations, contacts, and inboxes | `brew install salmonumbrella/tap/chatwoot-cli` |
 | **deel-cli** | CLI for Deel to manage contracts, invoices, and payments | `brew install salmonumbrella/tap/deel-cli` |
 | **deputy-cli** | CLI for Deputy to manage employees, timesheets, rosters, and leave | `brew install salmonumbrella/tap/deputy-cli` |
+| **dub-cli** | CLI for Dub.co to manage links, domains, analytics, and workspaces | `brew install salmonumbrella/tap/dub-cli` |
 | **docuseal-cli** | CLI for DocuSeal to manage documents, submissions, and templates | `brew install salmonumbrella/tap/docuseal-cli` |
 | **eightsleep-cli** | CLI for Eight Sleep to control temperature, alarms, and sleep metrics | `brew install salmonumbrella/tap/eightsleep-cli` |
 | **fastmail-cli** | CLI for Fastmail to manage emails, folders, and masked addresses | `brew install salmonumbrella/tap/fastmail-cli` |
@@ -47,6 +49,7 @@ brew install salmonumbrella/tap/notte-cli
 - [chatwoot-cli](https://github.com/salmonumbrella/chatwoot-cli)
 - [deel-cli](https://github.com/salmonumbrella/deel-cli)
 - [deputy-cli](https://github.com/salmonumbrella/deputy-cli)
+- [dub-cli](https://github.com/salmonumbrella/dub-cli)
 - [docuseal-cli](https://github.com/salmonumbrella/docuseal-cli)
 - [eightsleep-cli](https://github.com/salmonumbrella/eightsleep-cli)
 - [fastmail-cli](https://github.com/salmonumbrella/fastmail-cli)
