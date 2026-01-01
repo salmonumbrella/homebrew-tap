@@ -19,6 +19,7 @@ brew install salmonumbrella/tap/docuseal-cli
 brew install salmonumbrella/tap/eightsleep-cli
 brew install salmonumbrella/tap/fastmail-cli
 brew install salmonumbrella/tap/forward-email
+brew install salmonumbrella/tap/line-cli
 brew install salmonumbrella/tap/notion-cli
 brew install salmonumbrella/tap/notte-cli
 ```
@@ -38,6 +39,7 @@ brew install salmonumbrella/tap/notte-cli
 | **eightsleep-cli** | CLI for Eight Sleep to control temperature, alarms, and sleep metrics | `brew install salmonumbrella/tap/eightsleep-cli` |
 | **fastmail-cli** | CLI for Fastmail to manage emails, folders, and masked addresses | `brew install salmonumbrella/tap/fastmail-cli` |
 | **forward-email** | CLI for Forward Email to manage domains, aliases, and email operations | `brew install salmonumbrella/tap/forward-email` |
+| **line-cli** | CLI for LINE Official Account / Messaging API | `brew install salmonumbrella/tap/line-cli` |
 | **notion-cli** | CLI for Notion to manage pages, databases, and blocks | `brew install salmonumbrella/tap/notion-cli` |
 | **notte-cli** | CLI for Notte to automate browsers, extract data, and run tasks | `brew install salmonumbrella/tap/notte-cli` |
 
@@ -54,5 +56,6 @@ brew install salmonumbrella/tap/notte-cli
 - [eightsleep-cli](https://github.com/salmonumbrella/eightsleep-cli)
 - [fastmail-cli](https://github.com/salmonumbrella/fastmail-cli)
 - [forward-email](https://github.com/ginsys/forward-email)
+- [line-cli](https://github.com/salmonumbrella/line-official-cli)
 - [notion-cli](https://github.com/salmonumbrella/notion-cli)
 - [notte-cli](https://github.com/salmonumbrella/notte-cli)
