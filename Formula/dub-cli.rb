@@ -1,28 +1,28 @@
 class DubCli < Formula
   desc "CLI for Dub.co to manage links, domains, analytics, and workspaces"
   homepage "https://github.com/salmonumbrella/dub-cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.3/dub-cli_0.1.3_darwin_arm64.tar.gz"
-      sha256 "93e2270ec0b4babe2276363a4b4c071aa387a2b5ea3f249556de27a7d44207b3"
+      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.4/dub-cli_0.1.4_darwin_arm64.tar.gz"
+      sha256 "8e9f11584f02f88e67e228489ee4146257752c206765634bd6f56541d385862c"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.3/dub-cli_0.1.3_darwin_amd64.tar.gz"
-      sha256 "57b20f320206f4c9a2511621338b0d7fc4494bff63bc6e39909fafacb6a5ed47"
+      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.4/dub-cli_0.1.4_darwin_amd64.tar.gz"
+      sha256 "113b6aeaba64879a2f31ce2abc1b868baedcd7d98866a9a6f78cf1e34b30f3f5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.3/dub-cli_0.1.3_linux_arm64.tar.gz"
-      sha256 "01353853b174b5b71c4fcc012c985570696e22f8da4f688ff55c0513b6ba6879"
+      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.4/dub-cli_0.1.4_linux_arm64.tar.gz"
+      sha256 "7872b869deeb0341905240230af696eef26bbab85763df97fe7af291446d532e"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.3/dub-cli_0.1.3_linux_amd64.tar.gz"
-      sha256 "52f43cb8dae4c017843b49c43430c54b3d937f8d2558425ffe206fe958c41bb6"
+      url "https://github.com/salmonumbrella/dub-cli/releases/download/v0.1.4/dub-cli_0.1.4_linux_amd64.tar.gz"
+      sha256 "d2ad94ee5eef5835f439730e69ee0220ab75f0f7648ddc6c362d72285b0f25ed"
     end
   end
 
