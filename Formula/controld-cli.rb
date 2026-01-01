@@ -5,21 +5,21 @@
 class ControldCli < Formula
   desc "CLI for ControlD DNS management - manage devices, profiles, and DNS filtering"
   homepage "https://github.com/salmonumbrella/controld-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.0/controld-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4eb3a8ef38d5bb9c9b2b6b55769489b21a20e503ac52ca4279d74e2924a09962"
+      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.1/controld-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "4dc4ed3fa1df8b8b79ee8a0c2421eb41e5f100e3c20197c50757871ced44c011"
 
       def install
         bin.install "controld"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.0/controld-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "e74f9c9c93ad741aa954cb85a573c5fce0d5de49a6c097014693d9344e4232e5"
+      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.1/controld-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "d4d8a728178dfdbf637b0773438e63a03e23cb021d323d6b1639ca1cc26382d8"
 
       def install
         bin.install "controld"
@@ -29,15 +29,15 @@ class ControldCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.0/controld-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "bfdf3818e32e2074f6db71a50919cacaed47378c0298f24a047f8b6309719142"
+      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.1/controld-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "1a90bd0cbb72536fa2728c8d49428b4b24a5603eb27d4553ab4d4bb241ce8a2b"
       def install
         bin.install "controld"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.0/controld-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "c901ae2ec313137cdf4038d9d948341ed0590eb1d58d4f17459f1b8cb35fc96f"
+      url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.1/controld-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "a2bb0dd8e583a6caec4eb218977d45298ddbbcfaa3bf89c9d7f8491714753009"
       def install
         bin.install "controld"
       end
