@@ -22,6 +22,7 @@ brew install salmonumbrella/tap/forward-email
 brew install salmonumbrella/tap/line-cli
 brew install salmonumbrella/tap/notion-cli
 brew install salmonumbrella/tap/notte-cli
+brew install salmonumbrella/tap/shopline-cli
 ```
 
 ## Available Formulas
@@ -42,6 +43,7 @@ brew install salmonumbrella/tap/notte-cli
 | **line-cli** | CLI for LINE Official Account / Messaging API | `brew install salmonumbrella/tap/line-cli` |
 | **notion-cli** | CLI for Notion to manage pages, databases, and blocks | `brew install salmonumbrella/tap/notion-cli` |
 | **notte-cli** | CLI for Notte to automate browsers, extract data, and run tasks | `brew install salmonumbrella/tap/notte-cli` |
+| **shopline-cli** | CLI for Shopline e-commerce platform | `brew install salmonumbrella/tap/shopline-cli` |
 
 ## Links
 
@@ -59,3 +61,4 @@ brew install salmonumbrella/tap/notte-cli
 - [line-cli](https://github.com/salmonumbrella/line-official-cli)
 - [notion-cli](https://github.com/salmonumbrella/notion-cli)
 - [notte-cli](https://github.com/salmonumbrella/notte-cli)
+- [shopline-cli](https://github.com/salmonumbrella/shopline-cli)
