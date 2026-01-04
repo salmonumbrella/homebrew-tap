@@ -5,20 +5,20 @@
 class NotionCli < Formula
   desc "CLI for Notion API"
   homepage "https://github.com/salmonumbrella/notion-cli"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.0/notion_darwin_amd64.tar.gz"
-      sha256 "b8d9d03b26dbfb49e227fc60381a94a03f719dae8b1ad133e85fe391276402a0"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.1/notion_darwin_amd64.tar.gz"
+      sha256 "705ef92d198cd895f32daea12739dd1ee491447da3c3f27f0a7e7931c7f2c2e9"
 
       def install
         bin.install "notion"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.0/notion_darwin_arm64.tar.gz"
-      sha256 "2c3015b4c8573ffed857ad4dbb9a23e7414e019c16a8db8df49e83ad57cb5404"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.1/notion_darwin_arm64.tar.gz"
+      sha256 "ee2c97c39e71bcdeecfc729abd970bea5a73ba463194be0a9265900bb59910dc"
 
       def install
         bin.install "notion"
@@ -28,15 +28,15 @@ class NotionCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.0/notion_linux_amd64.tar.gz"
-      sha256 "6c991c51c696771f992b2ee03ae2054e78531b5db678951324a2304ae4cb8378"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.1/notion_linux_amd64.tar.gz"
+      sha256 "07fec990e6cad9bbacb006998a50de4145abb9f3c32cb63050b48f03039cacd6"
       def install
         bin.install "notion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.0/notion_linux_arm64.tar.gz"
-      sha256 "7d3d000ae66c2770710d7c6f86c4f2375812981ff3576300ae1dbe4118be2876"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.1/notion_linux_arm64.tar.gz"
+      sha256 "cff8f725b1240902c0aa9ba1a6a54702dd7103155bb4de59143aecb92c6aef22"
       def install
         bin.install "notion"
       end
