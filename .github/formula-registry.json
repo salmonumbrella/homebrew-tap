@@ -1,0 +1,116 @@
+{
+  "formulas": {
+    "airwallex-cli": {
+      "repo": "salmonumbrella/airwallex-cli",
+      "binary_name": "airwallex",
+      "formula_name": "airwallex-cli",
+      "description": "CLI for Airwallex to manage transfers, beneficiaries, and balances",
+      "archive_prefix": "airwallex-cli"
+    },
+    "beeper-cli": {
+      "repo": "salmonumbrella/beeper-cli",
+      "binary_name": "beeper",
+      "formula_name": "beeper-cli",
+      "description": "CLI for interacting with Beeper Desktop's local API",
+      "archive_prefix": "beeper-cli"
+    },
+    "brandfetch-cli": {
+      "repo": "salmonumbrella/brandfetch-cli",
+      "binary_name": "brandfetch",
+      "formula_name": "brandfetch-cli",
+      "description": "CLI for Brandfetch to fetch logos, colors, and brand assets",
+      "archive_prefix": "brandfetch"
+    },
+    "chatwoot-cli": {
+      "repo": "salmonumbrella/chatwoot-cli",
+      "binary_name": "chatwoot",
+      "formula_name": "chatwoot-cli",
+      "description": "CLI for Chatwoot to manage conversations, contacts, and inboxes",
+      "archive_prefix": "chatwoot-cli"
+    },
+    "controld-cli": {
+      "repo": "salmonumbrella/controld-cli",
+      "binary_name": "controld",
+      "formula_name": "controld-cli",
+      "description": "CLI for ControlD DNS management - manage devices, profiles, and DNS filtering",
+      "archive_prefix": "controld-cli"
+    },
+    "deel-cli": {
+      "repo": "salmonumbrella/deel-cli",
+      "binary_name": "deel",
+      "formula_name": "deel-cli",
+      "description": "CLI for Deel to manage contracts, invoices, and payments",
+      "archive_prefix": "deel"
+    },
+    "deputy-cli": {
+      "repo": "salmonumbrella/deputy-cli",
+      "binary_name": "deputy",
+      "formula_name": "deputy-cli",
+      "description": "CLI for Deputy to manage employees, timesheets, rosters, and leave",
+      "archive_prefix": "deputy-cli"
+    },
+    "docuseal-cli": {
+      "repo": "salmonumbrella/docuseal-cli",
+      "binary_name": "docuseal",
+      "formula_name": "docuseal-cli",
+      "description": "CLI for DocuSeal to manage documents, submissions, and templates",
+      "archive_prefix": "docuseal"
+    },
+    "dub-cli": {
+      "repo": "salmonumbrella/dub-cli",
+      "binary_name": "dub",
+      "formula_name": "dub-cli",
+      "description": "CLI for Dub.co to manage links, domains, analytics, and workspaces",
+      "archive_prefix": "dub-cli"
+    },
+    "eightsleep-cli": {
+      "repo": "salmonumbrella/eightsleep-cli",
+      "binary_name": "eightsleep",
+      "formula_name": "eightsleep-cli",
+      "description": "CLI for Eight Sleep to control temperature, alarms, and sleep metrics",
+      "archive_prefix": "eightsleep-cli"
+    },
+    "fastmail-cli": {
+      "repo": "salmonumbrella/fastmail-cli",
+      "binary_name": "fastmail",
+      "formula_name": "fastmail-cli",
+      "description": "CLI for Fastmail to manage emails, folders, and masked addresses",
+      "archive_prefix": "fastmail"
+    },
+    "forward-email": {
+      "repo": "ginsys/forward-email",
+      "binary_name": "forward-email",
+      "formula_name": "forward-email",
+      "description": "CLI for Forward Email to manage domains, aliases, and email operations",
+      "archive_prefix": "forward-email"
+    },
+    "line-cli": {
+      "repo": "salmonumbrella/line-official-cli",
+      "binary_name": "line",
+      "formula_name": "line-cli",
+      "description": "CLI for LINE Official Account / Messaging API",
+      "archive_prefix": "line-cli"
+    },
+    "notion-cli": {
+      "repo": "salmonumbrella/notion-cli",
+      "binary_name": "notion",
+      "formula_name": "notion-cli",
+      "description": "CLI for Notion API",
+      "archive_prefix": "notion"
+    },
+    "notte-cli": {
+      "repo": "salmonumbrella/notte-cli",
+      "binary_name": "notte",
+      "formula_name": "notte-cli",
+      "description": "CLI for Notte to automate browsers, extract data, and run tasks",
+      "archive_prefix": "notte-cli"
+    },
+    "shopline-cli": {
+      "repo": "salmonumbrella/shopline-cli",
+      "binary_name": "shopline",
+      "formula_name": "shopline-cli",
+      "description": "CLI for Shopline e-commerce platform",
+      "archive_prefix": "shopline-cli"
+    }
+  }
+}
