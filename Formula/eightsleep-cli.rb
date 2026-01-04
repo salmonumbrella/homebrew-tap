@@ -1,28 +1,28 @@
 class EightsleepCli < Formula
   desc "CLI for Eight Sleep to control temperature, alarms, and sleep metrics"
   homepage "https://github.com/salmonumbrella/eightsleep-cli"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.2/eightsleep-cli_0.2.2_darwin_arm64.tar.gz"
-      sha256 "b8ce9abe2690f5fc33acbb2a70b54d7f78034446c8f970706ecdea3bc02abc5f"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.3/eightsleep-cli_0.2.3_darwin_arm64.tar.gz"
+      sha256 "e80d6b7d3601d685f638463b85b002b6cacf434c1e0d5e3f3886b75b409853e0"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.2/eightsleep-cli_0.2.2_darwin_amd64.tar.gz"
-      sha256 "f3f60dd1e5b55a239b7953189637fa7b6f7fcffad1f8e451691e336199c0a2ac"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.3/eightsleep-cli_0.2.3_darwin_amd64.tar.gz"
+      sha256 "d5894499a34bf48951591970e1048c82bbeaee60b0d5d663013304faff5b0f62"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.2/eightsleep-cli_0.2.2_linux_arm64.tar.gz"
-      sha256 "256fcba064cc469f5df88aa08db846eb1974acf6fcf8f22b905b0501e4bd12af"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.3/eightsleep-cli_0.2.3_linux_arm64.tar.gz"
+      sha256 "92d861a581753977cdf2726481d85f78657dd8309485536b12c9fa44d8adc819"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.2/eightsleep-cli_0.2.2_linux_amd64.tar.gz"
-      sha256 "3921333b7bf53f5672aedbefd6b6e47046d707d53a2454971221eda06473e8c6"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.3/eightsleep-cli_0.2.3_linux_amd64.tar.gz"
+      sha256 "d26a6dfa3e0bf6df7372bbbc6ce481700cafc0200e56397ad856d331bbcd2b82"
     end
   end
 
