@@ -1,28 +1,28 @@
 class DeelCli < Formula
   desc "CLI for Deel to manage contracts, invoices, and payments"
   homepage "https://github.com/salmonumbrella/deel-cli"
-  version "0.2.3"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.2.3/deel_0.2.3_darwin_arm64.tar.gz"
-      sha256 "9596be79c84dbffaf16025a1c0cb305e9d847a398dc30e915527e5aab49072d0"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.4.1/deel_0.4.1_darwin_arm64.tar.gz"
+      sha256 "5d0fe5c574ad982aea484cba261edea643f682bd85f9c7714b3e48216ceefa20"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.2.3/deel_0.2.3_darwin_amd64.tar.gz"
-      sha256 "d980a47717d7a2d77b66bd61791ba8d2ae38f2928d70207a4d7e9452068b9ba1"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.4.1/deel_0.4.1_darwin_amd64.tar.gz"
+      sha256 "b6ededd76d74f3e0998c2210e7bbeffbe2731c280f3b95811e63a792f50b6a47"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.2.3/deel_0.2.3_linux_arm64.tar.gz"
-      sha256 "d623797511ca63f4c7e9440dd8c942bc111393ca8d5db4c805c23aa2fe53b956"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.4.1/deel_0.4.1_linux_arm64.tar.gz"
+      sha256 "643062b57655459fe8d457c3cdebf78d79587f8d31edc2450fce2c3c5389425a"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.2.3/deel_0.2.3_linux_amd64.tar.gz"
-      sha256 "a200d60cce02f9e71af116985d199014772f1820213a15e13fa4d999fb0b7912"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.4.1/deel_0.4.1_linux_amd64.tar.gz"
+      sha256 "de1cc59efd6fac5a4307e9b36e2a5c7647c394a0faa2b53ab8444221e62b6ff2"
     end
   end
 
