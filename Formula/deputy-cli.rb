@@ -1,28 +1,28 @@
 class DeputyCli < Formula
   desc "CLI for Deputy to manage employees, timesheets, rosters, and leave"
   homepage "https://github.com/salmonumbrella/deputy-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.0/deputy-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a22d0209d37d3d0ef15e9e066bd97fabb7a80139d8a2657185013767d32c358a"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.1/deputy-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "21dc9194359811af2f63885878f7ae5cbe29d70bc6a3d729680a0e1363295ae2"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.0/deputy-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a5f1b536c608f7b75aba1e5287dd81ebe05bb00d8432fb0f19b22535e6100828"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.1/deputy-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "1463babc18182c0341db2f118a07a39bb0879982794f596c9840538109b2fe92"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.0/deputy-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "9a743bafb794f1cedd7dc9d3cb2c273a2f72f848e3bc30453b3ae34b4dcbc7d8"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.1/deputy-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "d4d8258526a784ff810610d9e77e71aae87841f8c3f6e7ac97cb80757f64a977"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.0/deputy-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "8f38f3353d421fea4db4226d7c105dcf3bc811c58300d73a299a6163936013e9"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.1/deputy-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "ad55dcad1a07f60eeb4b868d725c53c7c0b1621bae265f226b34962c13a4baa4"
     end
   end
 
