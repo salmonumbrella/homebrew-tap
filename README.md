@@ -23,6 +23,7 @@ brew install salmonumbrella/tap/line-cli
 brew install salmonumbrella/tap/notion-cli
 brew install salmonumbrella/tap/notte-cli
 brew install salmonumbrella/tap/shopline-cli
+brew install salmonumbrella/tap/threads-cli
 ```
 
 ## Available Formulas
@@ -44,6 +45,7 @@ brew install salmonumbrella/tap/shopline-cli
 | **notion-cli** | CLI for Notion to manage pages, databases, and blocks | `brew install salmonumbrella/tap/notion-cli` |
 | **notte-cli** | CLI for Notte to automate browsers, extract data, and run tasks | `brew install salmonumbrella/tap/notte-cli` |
 | **shopline-cli** | CLI for Shopline e-commerce platform | `brew install salmonumbrella/tap/shopline-cli` |
+| **threads-cli** | CLI for Threads API by Meta - manage posts, replies, insights | `brew install salmonumbrella/tap/threads-cli` |
 
 ## Links
 
@@ -62,3 +64,4 @@ brew install salmonumbrella/tap/shopline-cli
 - [notion-cli](https://github.com/salmonumbrella/notion-cli)
 - [notte-cli](https://github.com/salmonumbrella/notte-cli)
 - [shopline-cli](https://github.com/salmonumbrella/shopline-cli)
+- [threads-cli](https://github.com/salmonumbrella/threads-cli)
