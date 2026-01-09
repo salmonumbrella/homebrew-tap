@@ -7,11 +7,11 @@ class NotionCli < Formula
   on_macos do
     on_intel do
       url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.7/notion_darwin_amd64.tar.gz"
-      sha256 "d85abe3fe4f1618508a9233940b4e5ca83d0eda446e0c152985ee4d4bd8b3d47"
+      sha256 "0bae651f02841eff4ee79b5eb169c90be5b51e02488cb29fe37b75d105209d6b"
     end
     on_arm do
       url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.3.7/notion_darwin_arm64.tar.gz"
-      sha256 "0bae651f02841eff4ee79b5eb169c90be5b51e02488cb29fe37b75d105209d6b"
+      sha256 "d85abe3fe4f1618508a9233940b4e5ca83d0eda446e0c152985ee4d4bd8b3d47"
     end
   end
 
