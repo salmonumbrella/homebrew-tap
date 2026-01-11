@@ -1,28 +1,28 @@
 class FastmailCli < Formula
   desc "CLI for Fastmail to manage emails, folders, and masked addresses"
   homepage "https://github.com/salmonumbrella/fastmail-cli"
-  version "0.1.6"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.6/fastmail_0.1.6_darwin_arm64.tar.gz"
-      sha256 "73049b03c14c48e52fe4262c543b9d66d751608e165d40a14281afec966ab34d"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.0/fastmail_0.2.0_darwin_arm64.tar.gz"
+      sha256 "47670e0503b30ebdcd32f02303f7be3e7b19ecb6d9d40dc9e5e348710b12646e"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.6/fastmail_0.1.6_darwin_amd64.tar.gz"
-      sha256 "ce0e5f59546039b1279ddcb26b34b348530d57bc601c0375b048c9d84bfa6e5c"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.0/fastmail_0.2.0_darwin_amd64.tar.gz"
+      sha256 "55e409fcf6d40f40747f1001f082e73dd72b535a91ffb0e9cbccd5f25a3160ab"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.6/fastmail_0.1.6_linux_arm64.tar.gz"
-      sha256 "f7859efad0a88c24822e537d9d9639dd020e811004ba83237cb6ac5124105646"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.0/fastmail_0.2.0_linux_arm64.tar.gz"
+      sha256 "f848e80710199fc7df36dc71d5795c80279887230710c06b3e525c84225fc128"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.1.6/fastmail_0.1.6_linux_amd64.tar.gz"
-      sha256 "139dbbdee2d5709c57bc2e99aa958262e2d04f3369f8c43157b9869d7aa3d359"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.0/fastmail_0.2.0_linux_amd64.tar.gz"
+      sha256 "30673707aef6bd50398096a7f379271c3206544de038f6ee48a2acbbf2f8ef47"
     end
   end
 
