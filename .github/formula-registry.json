@@ -111,6 +111,13 @@
       "formula_name": "shopline-cli",
       "description": "CLI for Shopline e-commerce platform",
       "archive_prefix": "shopline-cli"
+    },
+    "twenty-cli": {
+      "repo": "salmonumbrella/twenty-cli",
+      "binary_name": "twenty",
+      "formula_name": "twenty-cli",
+      "description": "CLI for Twenty CRM to manage people, companies, opportunities, and tasks",
+      "archive_prefix": "twenty"
     }
   }
 }
