@@ -22,6 +22,7 @@ brew install salmonumbrella/tap/forward-email
 brew install salmonumbrella/tap/line-cli
 brew install salmonumbrella/tap/notion-cli
 brew install salmonumbrella/tap/notte-cli
+brew install salmonumbrella/tap/roam-cli
 brew install salmonumbrella/tap/shopline-cli
 brew install salmonumbrella/tap/threads-cli
 brew install salmonumbrella/tap/twenty-cli
@@ -45,6 +46,7 @@ brew install salmonumbrella/tap/twenty-cli
 | **line-cli** | CLI for LINE Official Account / Messaging API | `brew install salmonumbrella/tap/line-cli` |
 | **notion-cli** | CLI for Notion to manage pages, databases, and blocks | `brew install salmonumbrella/tap/notion-cli` |
 | **notte-cli** | CLI for Notte to automate browsers, extract data, and run tasks | `brew install salmonumbrella/tap/notte-cli` |
+| **roam-cli** | CLI for Roam Research to manage pages, blocks, and daily notes | `brew install salmonumbrella/tap/roam-cli` |
 | **shopline-cli** | CLI for Shopline e-commerce platform | `brew install salmonumbrella/tap/shopline-cli` |
 | **threads-cli** | CLI for Threads API by Meta - manage posts, replies, insights | `brew install salmonumbrella/tap/threads-cli` |
 | **twenty-cli** | CLI for Twenty CRM to manage people, companies, opportunities, and tasks | `brew install salmonumbrella/tap/twenty-cli` |
@@ -65,6 +67,7 @@ brew install salmonumbrella/tap/twenty-cli
 - [line-cli](https://github.com/salmonumbrella/line-official-cli)
 - [notion-cli](https://github.com/salmonumbrella/notion-cli)
 - [notte-cli](https://github.com/salmonumbrella/notte-cli)
+- [roam-cli](https://github.com/salmonumbrella/roam-cli)
 - [shopline-cli](https://github.com/salmonumbrella/shopline-cli)
 - [threads-cli](https://github.com/salmonumbrella/threads-cli)
 - [twenty-cli](https://github.com/salmonumbrella/twenty-cli)
