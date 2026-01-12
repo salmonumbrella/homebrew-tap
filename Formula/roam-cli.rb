@@ -1,28 +1,28 @@
 class RoamCli < Formula
   desc "CLI for Roam Research to manage pages, blocks, and daily notes"
   homepage "https://github.com/salmonumbrella/roam-cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.3/roam-cli_0.1.3_darwin_arm64.tar.gz"
-      sha256 "12612c9ef09dad9ffeb42a62c46a5f8926e4cc06db9597e2d33cb03e3aa1d590"
+      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.4/roam-cli_0.1.4_darwin_arm64.tar.gz"
+      sha256 "25a22b0dd48a42a099d47f93c9acb52c8ab43f5da981d4d47a2d0cf61f38f6ff"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.3/roam-cli_0.1.3_darwin_amd64.tar.gz"
-      sha256 "caa73063eb69627aacd1f46ed0a056b2b98331928d43a859a2eca60b53b70a65"
+      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.4/roam-cli_0.1.4_darwin_amd64.tar.gz"
+      sha256 "c4dc12b28de5188a5d39e9a2c0df517bfddb969fe8b484b418d0a8cbfe31f288"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.3/roam-cli_0.1.3_linux_arm64.tar.gz"
-      sha256 "112d3bb67579ca4827dc855733c61fb5645863e7ceccf65b7e88228a9f38ade8"
+      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.4/roam-cli_0.1.4_linux_arm64.tar.gz"
+      sha256 "dfe9b2ae0290274f98b6e1a3b2b1dd8be73894a4da5252e411250b8afe207a97"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.3/roam-cli_0.1.3_linux_amd64.tar.gz"
-      sha256 "e5cbaa20a1b80f4ac057f7b7ca75860a669d56f91c13ba808b0927798e606316"
+      url "https://github.com/salmonumbrella/roam-cli/releases/download/v0.1.4/roam-cli_0.1.4_linux_amd64.tar.gz"
+      sha256 "ca19a78e84d03303668c7d0a64fe23046df11204828ae41a1d64acf4aebc2c6f"
     end
   end
 
