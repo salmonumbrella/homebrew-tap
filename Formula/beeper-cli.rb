@@ -1,28 +1,28 @@
 class BeeperCli < Formula
   desc "CLI for interacting with Beeper Desktop's local API"
   homepage "https://github.com/salmonumbrella/beeper-cli"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.7/beeper-cli_0.1.7_darwin_arm64.tar.gz"
-      sha256 "893abdb4b897687484785039a60fca956418deb10fdd8dc36c8043fb0fc7bfe1"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.8/beeper-cli_0.1.8_darwin_arm64.tar.gz"
+      sha256 "d857d7404c6781d5bc944954ac20b249b231cdd195c2a04973290abfbb148c4c"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.7/beeper-cli_0.1.7_darwin_amd64.tar.gz"
-      sha256 "2c64385e1f241ff7e02e23888340c3ff85cd37dfc0f280ce5dcdd1466a8af467"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.8/beeper-cli_0.1.8_darwin_amd64.tar.gz"
+      sha256 "3096940d853a203d966330d52e0fd503bd322b18488d5eab9b56239fca1e6f0f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.7/beeper-cli_0.1.7_linux_arm64.tar.gz"
-      sha256 "c88e0eaff82c8e90e85ffa7e60e1e5d02fbb92aa98e9e14c699ef7e3ab6f776f"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.8/beeper-cli_0.1.8_linux_arm64.tar.gz"
+      sha256 "00d21a8e9a7b84a01269bb2f8a9147be0e93d34bc2e016b4397afd8e98b4bdb8"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.7/beeper-cli_0.1.7_linux_amd64.tar.gz"
-      sha256 "583a4d390203015d45e8fa6c83b9e47e2c0a02e4b94815925e36e99fc7adcffa"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.1.8/beeper-cli_0.1.8_linux_amd64.tar.gz"
+      sha256 "3fcf8cf18db578f5dcb704df54426852ea1ebf22e55365df3150ccae8e35cd58"
     end
   end
 
