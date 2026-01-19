@@ -105,15 +105,15 @@ jobs:
             sed -i "s|/v$CURRENT_VERSION/|/v$LATEST_VERSION/|g" "$formula"
 
             # Update SHAs using positional replacement
-            # All formulas have consistent structure with exactly 4 sha256 lines in order:
-            # 1st: darwin arm64, 2nd: darwin amd64, 3rd: linux arm64, 4th: linux amd64
-            awk -v s1="$SHA_DARWIN_ARM64" -v s2="$SHA_DARWIN_AMD64" -v s3="$SHA_LINUX_ARM64" -v s4="$SHA_LINUX_AMD64" '
+            # Formula structure: on_intel (amd64) comes before on_arm in both macos and linux blocks
+            # 1st: darwin amd64, 2nd: darwin arm64, 3rd: linux amd64, 4th: linux arm64
+            awk -v sha_darwin_amd64="$SHA_DARWIN_AMD64" -v sha_darwin_arm64="$SHA_DARWIN_ARM64" -v sha_linux_amd64="$SHA_LINUX_AMD64" -v sha_linux_arm64="$SHA_LINUX_ARM64" '
               /sha256/ {
                 count++
-                if (count == 1) { sub(/"[^"]*"/, "\"" s1 "\""); print; next }
-                if (count == 2) { sub(/"[^"]*"/, "\"" s2 "\""); print; next }
-                if (count == 3) { sub(/"[^"]*"/, "\"" s3 "\""); print; next }
-                if (count == 4) { sub(/"[^"]*"/, "\"" s4 "\""); print; next }
+                if (count == 1) { sub(/"[^"]*"/, "\"" sha_darwin_amd64 "\""); print; next }
+                if (count == 2) { sub(/"[^"]*"/, "\"" sha_darwin_arm64 "\""); print; next }
+                if (count == 3) { sub(/"[^"]*"/, "\"" sha_linux_amd64 "\""); print; next }
+                if (count == 4) { sub(/"[^"]*"/, "\"" sha_linux_arm64 "\""); print; next }
               }
               { print }
             ' "$formula" > "$formula.tmp" && mv "$formula.tmp" "$formula"
