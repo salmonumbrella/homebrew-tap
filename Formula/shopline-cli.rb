@@ -1,28 +1,28 @@
 class ShoplineCli < Formula
   desc "CLI for Shopline e-commerce platform"
   homepage "https://github.com/salmonumbrella/shopline-cli"
-  version "0.4.2"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.4.2/shopline-cli_darwin_arm64.tar.gz"
-      sha256 "7abc9707d1ebee0a3baa895852f27a5084043974de40bb86ede4c1fbf58c42f7"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.5.0/shopline-cli_darwin_arm64.tar.gz"
+      sha256 "3ec619426ca099f6da9a1e3272b673f030acd44bfd59d1dbc1cd7646e6e0093b"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.4.2/shopline-cli_darwin_amd64.tar.gz"
-      sha256 "11b5265178df50adf2a88143e13fd48fa2ced86727d88efd268d3e1f96f0c3a2"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.5.0/shopline-cli_darwin_amd64.tar.gz"
+      sha256 "84192d4b2db54990a8def06a217af0718452d3fb124d64cdda45969f308f3a67"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.4.2/shopline-cli_linux_arm64.tar.gz"
-      sha256 "1193ecfe5743150725d29317bfc1eb4dc6bbeefbda4906a75c50fbdf991f907d"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.5.0/shopline-cli_linux_arm64.tar.gz"
+      sha256 "1067fb0e29ed20f2394206f37ed44518abc48a8e6edd1a3074ca58edef9919e4"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.4.2/shopline-cli_linux_amd64.tar.gz"
-      sha256 "d693b319e8afb374d1e2ebeee5dd72ca70176a188ab3606ab2956531ba52388a"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.5.0/shopline-cli_linux_amd64.tar.gz"
+      sha256 "6cee2febf966468560726bb00b75215a0dab526a35cf92fa1bf85c05630b91f3"
     end
   end
 
