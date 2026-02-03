@@ -1,28 +1,28 @@
 class NotionCli < Formula
   desc "CLI for Notion API"
   homepage "https://github.com/salmonumbrella/notion-cli"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.0/notion_darwin_arm64.tar.gz"
-      sha256 "e0ef8c97b41c5a5f07ccbaf46c450f6e49284bfd2b128e77a7332c5ea6c90909"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.1/notion_darwin_arm64.tar.gz"
+      sha256 "3eae83f21d648c6247f96b5b88a2e05c687a836dc6ba43ff4756bbad4bee3fdf"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.0/notion_darwin_amd64.tar.gz"
-      sha256 "a1589eadfb95ec90cdb52bdb59c58feb5d2cf95b80c86220fa0e4d96c4a8a6dc"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.1/notion_darwin_amd64.tar.gz"
+      sha256 "bd6f827fbdecac528742711a120541771f9a19c942d10c5a64651ac0bb2d32d6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.0/notion_linux_arm64.tar.gz"
-      sha256 "213a3709ca333072a9305ddf5c97bbfd9b0077cc4f7a98055e1998e2817d6641"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.1/notion_linux_arm64.tar.gz"
+      sha256 "6d67de98a791d947dc9848e86089a9cb41d2a7447e6c1023853f58f1549578e0"
     end
     on_intel do
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.0/notion_linux_amd64.tar.gz"
-      sha256 "a8e10502bdafca49822a938d765163c42d22d29cc74434c8a4ceffd39dafef88"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.1/notion_linux_amd64.tar.gz"
+      sha256 "a62f37785458db9c9ee9dc8ad49b20c132ca451e026177bfc86d850f3149d760"
     end
   end
 
