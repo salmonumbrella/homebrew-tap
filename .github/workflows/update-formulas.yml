@@ -21,7 +21,7 @@ jobs:
           set -e
 
           # Formulas managed by GoReleaser's brews: section (updated atomically on release)
-          # Only forward-email, roam-cli, and twenty-cli still need this workflow
+          # Only forward-email still needs this workflow
           GORELEASER_MANAGED="airwallex-cli beeper-cli brandfetch-cli chatwoot-cli controld-cli deel-cli deputy-cli docuseal-cli dub-cli eightsleep-cli fastmail-cli line-cli notion-cli notte-cli shopline-cli threads-cli"
 
           UPDATED_FORMULAS=""
