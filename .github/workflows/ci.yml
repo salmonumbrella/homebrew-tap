@@ -16,13 +16,26 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
+      - name: Tap checked out repository (avoid API / stale tap content)
+        run: |
+          set -euo pipefail
+
+          TAP_USER="${GITHUB_REPOSITORY%/*}"
+          TAP_REPO="${GITHUB_REPOSITORY#*/}"
+          TAP_REPO="${TAP_REPO#homebrew-}" # homebrew-tap -> tap
+          TAP="$TAP_USER/$TAP_REPO"
+
+          brew tap --custom-remote "$TAP" "$GITHUB_WORKSPACE"
+
       - name: Audit formulas
         run: |
           set -e
-          for formula in Formula/*.rb; do
-            formula_name=$(basename "$formula" .rb)
-            brew audit --strict "$formula_name"
-          done
+          TAP_USER="${GITHUB_REPOSITORY%/*}"
+          TAP_REPO="${GITHUB_REPOSITORY#*/}"
+          TAP_REPO="${TAP_REPO#homebrew-}"
+          TAP="$TAP_USER/$TAP_REPO"
+
+          brew audit --strict --tap "$TAP" --display-filename
 
       - name: Test formulas (style only)
         run: |
