@@ -40,6 +40,8 @@ jobs:
       - name: Test formulas (style only)
         run: |
           set -e
+          # Exclude Sorbet/BlockMethodDefinition: false positive on multi-arch
+          # platform blocks (on_macos/on_linux with on_arm/on_intel)
           for formula in Formula/*.rb; do
-            brew style "$formula"
+            brew style --except-cops Sorbet/BlockMethodDefinition "$formula"
           done

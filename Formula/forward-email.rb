@@ -31,6 +31,6 @@ class ForwardEmail < Formula
   end
 
   test do
-    system "#{bin}/forward-email", "--help"
+    system bin/"forward-email", "--help"
   end
 end
