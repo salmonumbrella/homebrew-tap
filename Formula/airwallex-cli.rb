@@ -5,21 +5,21 @@
 class AirwallexCli < Formula
   desc "CLI for Airwallex to manage transfers, beneficiaries, and balances"
   homepage "https://github.com/salmonumbrella/airwallex-cli"
-  version "0.2.10"
+  version "0.2.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.10/airwallex-cli_0.2.10_darwin_amd64.tar.gz"
-      sha256 "8d4fdbe565e3c7bb901c943a2dda53371d7e60af7f89594d9b320170fb2ad1db"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.11/airwallex-cli_0.2.11_darwin_amd64.tar.gz"
+      sha256 "df2d695e8b4e563206893d9887cf59984fa2688b29d87e04aa66fb277f5d0c7e"
 
       def install
         bin.install "airwallex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.10/airwallex-cli_0.2.10_darwin_arm64.tar.gz"
-      sha256 "972c09c08f82f4fb0c4744d937aaf3261f6379823ae1618d3422cec8cd5ec8f0"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.11/airwallex-cli_0.2.11_darwin_arm64.tar.gz"
+      sha256 "8400bfa6480bf1bdcd74871fb1a64ac0950f9f243923d42cd286448cf69857d3"
 
       def install
         bin.install "airwallex"
@@ -29,15 +29,15 @@ class AirwallexCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.10/airwallex-cli_0.2.10_linux_amd64.tar.gz"
-      sha256 "8f0c9cc6f6baa2c1e1c28540d2cc6b9fc682749b9c6ceaf41b081db14a8e5f7d"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.11/airwallex-cli_0.2.11_linux_amd64.tar.gz"
+      sha256 "5d03b9fe346e80b0567b339e11cde67f6aba57269090648f8dd94f4849a200c2"
       def install
         bin.install "airwallex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.10/airwallex-cli_0.2.10_linux_arm64.tar.gz"
-      sha256 "b07fc6223a555e8fb29ad8729d543834c619ba9199e0ef25da007f26bd497da9"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.11/airwallex-cli_0.2.11_linux_arm64.tar.gz"
+      sha256 "e3f82f569e7f8d55e2778c7177a200cd4f45ce4ff10c78045aada0b6cc1f20d9"
       def install
         bin.install "airwallex"
       end
