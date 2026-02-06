@@ -5,21 +5,21 @@
 class DeelCli < Formula
   desc "CLI for Deel to manage contracts, invoices, and payments"
   homepage "https://github.com/salmonumbrella/deel-cli"
-  version "0.5.8"
+  version "0.5.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.8/deel_0.5.8_darwin_amd64.tar.gz"
-      sha256 "38de3a6f35995f84b6b069dfdaa62e3aaf08b2366cb253bc434ece8c6d6e9e2d"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_darwin_amd64.tar.gz"
+      sha256 "2372e35f681a012bcf24c9e8cf2605c14b995f3ae004dbc2000529fe2dc0a7aa"
 
       def install
         bin.install "deel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.8/deel_0.5.8_darwin_arm64.tar.gz"
-      sha256 "55e6af09864347ed3f03aab91ab3607e6182f76cf659a1ddcad3d19b27ab9730"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_darwin_arm64.tar.gz"
+      sha256 "63d5dea00b0204991fd687775748c60bd3326682da0aa8e2bdbfa62adb25889a"
 
       def install
         bin.install "deel"
@@ -29,15 +29,15 @@ class DeelCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.8/deel_0.5.8_linux_amd64.tar.gz"
-      sha256 "3b1bfabdd16911f1a0d0e60437934a4c3aaa003bc99b28f5075209a50dde4dd9"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_linux_amd64.tar.gz"
+      sha256 "1faa3a62f58c8d1cf096de13e5bff8267e95c1e5de1c5d390e5e3f96c80ad958"
       def install
         bin.install "deel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.8/deel_0.5.8_linux_arm64.tar.gz"
-      sha256 "0ae484aae7d4ed06be21baf7871912b7f088d80c45bf642aee0c344982e10e6c"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_linux_arm64.tar.gz"
+      sha256 "ca56d035ce8f99a1f4f69a669c54c8071627542b9cf88f96cd2e66684871f453"
       def install
         bin.install "deel"
       end
