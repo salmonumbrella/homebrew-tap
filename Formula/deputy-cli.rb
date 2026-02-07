@@ -5,21 +5,21 @@
 class DeputyCli < Formula
   desc "CLI for Deputy to manage employees, timesheets, rosters, and leave"
   homepage "https://github.com/salmonumbrella/deputy-cli"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.8/deputy-cli_0.1.8_darwin_amd64.tar.gz"
-      sha256 "223f337a3a08b2285281c16d170d2510b547e02e22c4395bf0b1893e99c444e1"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.9/deputy-cli_0.1.9_darwin_amd64.tar.gz"
+      sha256 "b4356e66d0cda2e31bb93531ebcf1f01c5f6c4d2af8da54efbf97a98a7d92bec"
 
       def install
         bin.install "deputy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.8/deputy-cli_0.1.8_darwin_arm64.tar.gz"
-      sha256 "84c58e092ead319f1a99749680ecd1a4f2fef86978935dba26dec8913dc6d725"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.9/deputy-cli_0.1.9_darwin_arm64.tar.gz"
+      sha256 "7ec63723569077f9cdc05e3acc2ce853eae86a7da9174c1572b038dc4b8ab4a1"
 
       def install
         bin.install "deputy"
@@ -29,15 +29,15 @@ class DeputyCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.8/deputy-cli_0.1.8_linux_amd64.tar.gz"
-      sha256 "0388baaefc605f616b45f0113fe0a72329f03f5927d645c6c05a8f41f64d5567"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.9/deputy-cli_0.1.9_linux_amd64.tar.gz"
+      sha256 "a4ab97bccebbf9de8328cc4254f11c1c8fa84bb733623686be7a275a5c540937"
       def install
         bin.install "deputy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.8/deputy-cli_0.1.8_linux_arm64.tar.gz"
-      sha256 "e8dc5638009c87d4fe63d905e1e570385f6b3e2d8da3c65b32702062d14759f9"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.9/deputy-cli_0.1.9_linux_arm64.tar.gz"
+      sha256 "c79f09cfbc76e282ab96aa60218927e974c66a936c9d20e4930eaa7ccfafdabd"
       def install
         bin.install "deputy"
       end
