@@ -5,21 +5,21 @@
 class DeelCli < Formula
   desc "CLI for Deel to manage contracts, invoices, and payments"
   homepage "https://github.com/salmonumbrella/deel-cli"
-  version "0.5.9"
+  version "0.5.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_darwin_amd64.tar.gz"
-      sha256 "3d7c410d0a9898364a72313262ac80a9a73f9cca21708e4be5587089a0caa845"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.10/deel_0.5.10_darwin_amd64.tar.gz"
+      sha256 "d6075a49755cb94a9ff048f502314bd8ff1670c6073c40cdaed047ef03e7a8bf"
 
       def install
         bin.install "deel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_darwin_arm64.tar.gz"
-      sha256 "45c3d68b8f2e2668767da4bc424d10fa8d8aea24030d11cab95dab396098570d"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.10/deel_0.5.10_darwin_arm64.tar.gz"
+      sha256 "8f529f89e59758face9be57891f1356183424e26173becc517df3bbf00499997"
 
       def install
         bin.install "deel"
@@ -29,15 +29,15 @@ class DeelCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_linux_amd64.tar.gz"
-      sha256 "080b4f07ceba975c8cf3fcb7b36041e8673507f10eb54bc7c8006baab5948ef2"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.10/deel_0.5.10_linux_amd64.tar.gz"
+      sha256 "22d19095f32ad2a44bba0ff042d8c4647857cc2872dba854bfdfd778d0cc6caf"
       def install
         bin.install "deel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.9/deel_0.5.9_linux_arm64.tar.gz"
-      sha256 "965efb593405c22a1971d9f90313d082363b308db6646e500da3bb9a12fb47f2"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.10/deel_0.5.10_linux_arm64.tar.gz"
+      sha256 "c4ede6c43ecb855de18d6b6c48c6b26de72a7fa38da8eabe0e735ec345c9ca0c"
       def install
         bin.install "deel"
       end
