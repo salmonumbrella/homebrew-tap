@@ -5,21 +5,21 @@
 class EightsleepCli < Formula
   desc "CLI for Eight Sleep to control temperature, alarms, and sleep metrics"
   homepage "https://github.com/salmonumbrella/eightsleep-cli"
-  version "0.2.6"
+  version "0.2.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.6/eightsleep-cli_0.2.6_darwin_amd64.tar.gz"
-      sha256 "c506ed28e3a0d7768fe2c17c39973ba9299c3f320cee0bd767bdc95474ac1ee2"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.7/eightsleep-cli_0.2.7_darwin_amd64.tar.gz"
+      sha256 "0692194751e946100ef4d564c48f820e837c25bea8b6313f43381a0f305ff970"
 
       def install
         bin.install "eightsleep"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.6/eightsleep-cli_0.2.6_darwin_arm64.tar.gz"
-      sha256 "36906d2fabe07d54007dc164443371f0b1c237bb6e93f7e6e57fe65608ff58ef"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.7/eightsleep-cli_0.2.7_darwin_arm64.tar.gz"
+      sha256 "823f02a8daf11d092e62172eee399f76cb2305606477640eb0ec74f7acc81d87"
 
       def install
         bin.install "eightsleep"
@@ -29,15 +29,15 @@ class EightsleepCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.6/eightsleep-cli_0.2.6_linux_amd64.tar.gz"
-      sha256 "72037a440c380e8815d9c150f18ccf9127295b8d5fac673375b0e86c5d51dbcf"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.7/eightsleep-cli_0.2.7_linux_amd64.tar.gz"
+      sha256 "c7a59342f413bc9fd1636304fdf075926e07918f2eb48bda3dfd7f8b57a6d08f"
       def install
         bin.install "eightsleep"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.6/eightsleep-cli_0.2.6_linux_arm64.tar.gz"
-      sha256 "7686ecfd5830d2be51da45b7e09d021c590a1d3771cabc05eb788490ea7d78d8"
+      url "https://github.com/salmonumbrella/eightsleep-cli/releases/download/v0.2.7/eightsleep-cli_0.2.7_linux_arm64.tar.gz"
+      sha256 "ffeb2cf708f681d5ba88f7284d60785cb5997479903e0f1e3e29a58ed8a1a0ef"
       def install
         bin.install "eightsleep"
       end
