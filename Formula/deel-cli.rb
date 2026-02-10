@@ -5,21 +5,21 @@
 class DeelCli < Formula
   desc "CLI for Deel to manage contracts, invoices, and payments"
   homepage "https://github.com/salmonumbrella/deel-cli"
-  version "0.5.11"
+  version "0.5.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.11/deel_0.5.11_darwin_amd64.tar.gz"
-      sha256 "59dce50167ebab028b3f1235e064852fe678103e7a6fb6907117ca0b3ffb52af"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.12/deel_0.5.12_darwin_amd64.tar.gz"
+      sha256 "4ebf9d6a5e4eabb2bba723b59391b2aece41646908c1cffc8e3509b2d559d8f1"
 
       def install
         bin.install "deel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.11/deel_0.5.11_darwin_arm64.tar.gz"
-      sha256 "5c93b7a3409534625526f0550d84097d529e543f7188b582e80b0cf7af0ecc24"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.12/deel_0.5.12_darwin_arm64.tar.gz"
+      sha256 "5b1aac19817cc8381c601412dee7889fb96176d27dcf097edffb2f15ed8aa28c"
 
       def install
         bin.install "deel"
@@ -29,15 +29,15 @@ class DeelCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.11/deel_0.5.11_linux_amd64.tar.gz"
-      sha256 "4ad1d60510c61746d6da137d1c4f758f31d51a1a3dfabf400c37f9808dfffd99"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.12/deel_0.5.12_linux_amd64.tar.gz"
+      sha256 "2d48c66ba2f7c45a6ad9362bc57496e7ecc1c5a258f0401decd1c5dc9a8e3aba"
       def install
         bin.install "deel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.11/deel_0.5.11_linux_arm64.tar.gz"
-      sha256 "dbc510c7e9c129fcc41628afc06f212399d511b6f5f9c97f9f54916130414adf"
+      url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.12/deel_0.5.12_linux_arm64.tar.gz"
+      sha256 "0a872dba6e9dd70b8cdbc8453a3f0e1e1ac4b4171003d08c9377791db0255b0d"
       def install
         bin.install "deel"
       end
