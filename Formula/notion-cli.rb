@@ -5,21 +5,21 @@
 class NotionCli < Formula
   desc "CLI for Notion API"
   homepage "https://github.com/salmonumbrella/notion-cli"
-  version "0.5.16"
+  version "0.5.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.16/notion_0.5.16_darwin_amd64.tar.gz"
-      sha256 "ceb7f34021cb3de902f365d2efdef03511034b2a957f7d9acbd1782693a153e2"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.17/notion_0.5.17_darwin_amd64.tar.gz"
+      sha256 "8249f1520d62bca141b958863532acdbd259798121676bdc2049b4f517b472a5"
 
       def install
         bin.install "ntn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.16/notion_0.5.16_darwin_arm64.tar.gz"
-      sha256 "bcdb07edfce00c06367eea7679b30c7aaf03f9a9afe8bcde1224ac3fd815712c"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.17/notion_0.5.17_darwin_arm64.tar.gz"
+      sha256 "8ae284ffc0495ba286ce01b8155a5fcc73c9448a9d1380c012e306e521709a3a"
 
       def install
         bin.install "ntn"
@@ -29,15 +29,15 @@ class NotionCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.16/notion_0.5.16_linux_amd64.tar.gz"
-      sha256 "f378f9c56333425dd646b869e4115f00b6e36f3ed3f0034e1365802b2e803f7c"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.17/notion_0.5.17_linux_amd64.tar.gz"
+      sha256 "c086fef7d3fc2a45728815f1b8950923420a3a452d7745670def96e5a398edb3"
       def install
         bin.install "ntn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.16/notion_0.5.16_linux_arm64.tar.gz"
-      sha256 "62b9c5665cca7ca1ad73bc400ffab99cc2b15a5f8a127341649ddee0dcbe60ac"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.17/notion_0.5.17_linux_arm64.tar.gz"
+      sha256 "b7425e6b41d101672a5dd11f1b6df6b21088ad4c7b70e4f6bd769bbfc63e79f2"
       def install
         bin.install "ntn"
       end
