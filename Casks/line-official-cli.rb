@@ -3,34 +3,33 @@ cask "line-official-cli" do
   name "line-official-cli"
   desc "CLI for LINE Official Account / Messaging API"
   homepage "https://github.com/salmonumbrella/line-official-cli"
-  version "0.3.5"
+  version "0.3.6"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "line-official"
-  binary "line"
 
   on_macos do
     on_intel do
       url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "8cb54e07a40dd056e7c6a0fcad4ef0daaa2c33245973cb9c36d81ad268e178d7"
+      sha256 "8814392eabe604f8a9a0d8def404beb0b7e1b853686744b27fc730423106c713"
     end
     on_arm do
       url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "b6bee6a23bd8f5b4cfc40328a7f8ed225ea58d2ca4a2341edf2f1cb83c7b6455"
+      sha256 "67f6af3e26a0a8029e71430aab3617d6b4d765191ee1e661daa631dabc4eccc2"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "50cd5e41d544ec416dec0971f17eeffae18bfc80b20d515c6a66767ce720db26"
+      sha256 "2b1681d033c9073feff1a52314176219ed82abe7060d2f926c051ff236defe57"
     end
     on_arm do
       url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "a5a1fb287efcf5a3fc0d6e8c9a626957069cb443cb779131a1eeb4edd39f0162"
+      sha256 "32fce59d255fa8d37fd0bda2337799ded4e757a414dd61fb0de9d1901f9f3cac"
     end
   end
 
