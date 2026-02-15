@@ -10,7 +10,9 @@ class LineOfficialCli < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(output: bin/"lno"), "./cmd/lno"
+    pkg = "github.com/salmonumbrella/line-official-cli/internal/cmd"
+    ldflags = "-s -w -X #{pkg}.version=#{version} -X #{pkg}.date=#{time.iso8601}"
+    system "go", "build", "-trimpath", "-ldflags=#{ldflags}", "-o", bin/"lno", "./cmd/lno"
   end
 
   test do
