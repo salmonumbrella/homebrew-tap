@@ -5,21 +5,21 @@
 class ChatwootCli < Formula
   desc "CLI for Chatwoot to manage conversations, contacts, and inboxes"
   homepage "https://github.com/salmonumbrella/chatwoot-cli"
-  version "0.2.21"
+  version "0.2.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.21/chatwoot-cli_0.2.21_darwin_amd64.tar.gz"
-      sha256 "954a9b93887d3daca5792ece9efb33007016c3ae7bc20a6fe216269004fe2898"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.22/chatwoot-cli_0.2.22_darwin_amd64.tar.gz"
+      sha256 "4496ae705cbe42a3cfb497cc487470f7ec117f7f93dfc11eba3c39ed28510a41"
 
       def install
         bin.install "cw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.21/chatwoot-cli_0.2.21_darwin_arm64.tar.gz"
-      sha256 "700b023e87628eb02f84279ca64335430f7a920426ff115919d47cef92ca984f"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.22/chatwoot-cli_0.2.22_darwin_arm64.tar.gz"
+      sha256 "16c5abe395a0f53727efe25fe03973b1fc5f19cc21253ff5c15d6db96e116af9"
 
       def install
         bin.install "cw"
@@ -29,15 +29,15 @@ class ChatwootCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.21/chatwoot-cli_0.2.21_linux_amd64.tar.gz"
-      sha256 "b826c16738f335d7ede6c04ddf641ed9e41dcd9a9bf51cc3c75873cc53844545"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.22/chatwoot-cli_0.2.22_linux_amd64.tar.gz"
+      sha256 "36aae1c1d8fd85fb6059516f602a1897de1ef3d6ccb758b589bb55e08808ad8f"
       def install
         bin.install "cw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.21/chatwoot-cli_0.2.21_linux_arm64.tar.gz"
-      sha256 "19ae59c9b78a1e2146598a10d25825dbfcfc352540cee2b9d1c42a6b88f12d41"
+      url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.22/chatwoot-cli_0.2.22_linux_arm64.tar.gz"
+      sha256 "010ea8b7d2d3f578cccbcd29d6dc1ff6239609085ba5f9dac6dbdc718cb8ac46"
       def install
         bin.install "cw"
       end
