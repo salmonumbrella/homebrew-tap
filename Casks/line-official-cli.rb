@@ -3,33 +3,33 @@ cask "line-official-cli" do
   name "line-official-cli"
   desc "CLI for LINE Official Account / Messaging API"
   homepage "https://github.com/salmonumbrella/line-official-cli"
-  version "0.3.6"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "line-official"
+  binary "lno"
 
   on_macos do
     on_intel do
-      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "8814392eabe604f8a9a0d8def404beb0b7e1b853686744b27fc730423106c713"
+      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/lno_#{version}_darwin_amd64.tar.gz"
+      sha256 "d6e26c02c13270b723e03c102352d7380a3b3a8bd5733d5983b6196644fa82fe"
     end
     on_arm do
-      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "67f6af3e26a0a8029e71430aab3617d6b4d765191ee1e661daa631dabc4eccc2"
+      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/lno_#{version}_darwin_arm64.tar.gz"
+      sha256 "86c870b88a92b03116fa7f0cbb3b32286825286222d715d056f7495b7ea6201b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "2b1681d033c9073feff1a52314176219ed82abe7060d2f926c051ff236defe57"
+      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/lno_#{version}_linux_amd64.tar.gz"
+      sha256 "539b30e5a299184fad5755ed12d09839e6eeecf800b855b328e8c1355b86debe"
     end
     on_arm do
-      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/line-official-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "32fce59d255fa8d37fd0bda2337799ded4e757a414dd61fb0de9d1901f9f3cac"
+      url "https://github.com/salmonumbrella/line-official-cli/releases/download/v#{version}/lno_#{version}_linux_arm64.tar.gz"
+      sha256 "8c2d0d0cd0e070f4208d40c17fd503f2b24ee20ad92208bc3a854c0356d632e7"
     end
   end
 
