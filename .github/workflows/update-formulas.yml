@@ -2,7 +2,7 @@ name: Update Formulas
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Every 6 hours (only handles non-GoReleaser formulas)
+    - cron: '0 * * * *' # Every hour (only handles non-GoReleaser formulas)
   workflow_dispatch: # Manual trigger
 
 permissions:
@@ -62,8 +62,20 @@ jobs:
             TAG=$(echo "$RELEASE_JSON" | jq -r '.tag_name')
             LATEST_VERSION="${TAG#v}"
 
-            # Get current version
+          # Get current version
             CURRENT_VERSION=$(grep -m1 'version "' "$formula" | sed 's/.*version "\([^"]*\)".*/\1/')
+            if [ -z "$CURRENT_VERSION" ]; then
+              echo "Skipping $FORMULA_NAME: missing version field"
+              echo "::endgroup::"
+              continue
+            fi
+
+            SHA_COUNT=$(grep -c '^\s*sha256 ' "$formula" || true)
+            if [ "$SHA_COUNT" -ne 4 ]; then
+              echo "Skipping $FORMULA_NAME: expected 4 sha256 entries, found $SHA_COUNT"
+              echo "::endgroup::"
+              continue
+            fi
 
             echo "Current: $CURRENT_VERSION, Latest: $LATEST_VERSION"
 
@@ -146,5 +158,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add Formula/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
           git commit -m "chore: update formulas -${{ env.UPDATED_FORMULAS }}"
           git push
