@@ -11,7 +11,7 @@ class NotionCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.24/notion_0.5.24_darwin_amd64.tar.gz"
-      sha256 "b71edd16b6584b1a5d99b947af7d4cd803d2adee0aa2525009fbfe47e1955dfa"
+      sha256 "19de76e743c1666f8738c56ec48639c222ade578478e887b32b6ed1b9493e285"
 
       def install
         bin.install "ntn"
@@ -19,7 +19,7 @@ class NotionCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.24/notion_0.5.24_darwin_arm64.tar.gz"
-      sha256 "eaa248d6d346bf942abfcdd36767eef9d89c806b645498da06a89cb9561c30bc"
+      sha256 "be8d019d091d283141598ed15e51b60a84d9614d908134eab5bfaba5b06bb2be"
 
       def install
         bin.install "ntn"
@@ -30,14 +30,14 @@ class NotionCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.24/notion_0.5.24_linux_amd64.tar.gz"
-      sha256 "1c1fbf0744ca919b43911c1f10825f05aa750f6b91c6f12a5592d86597d99a93"
+      sha256 "b68913826c95b118ae311bf7d81a99024a133ebf6dc390fc42a7aaaae852aa20"
       def install
         bin.install "ntn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.24/notion_0.5.24_linux_arm64.tar.gz"
-      sha256 "f5d569cce6a9e534ad41a8cbb24edb72fd5e3c7cfd2a593eb9d9cf3b3aad159d"
+      sha256 "a87a0b0a630a7d78a3fb2f955548c5aed9a6a55ba18dd8010304310546e413cc"
       def install
         bin.install "ntn"
       end
