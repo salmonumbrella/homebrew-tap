@@ -11,7 +11,7 @@ class AirwallexCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.26/airwallex-cli_0.2.26_darwin_amd64.tar.gz"
-      sha256 "0e8491cc01c00b23d3fa847d9822ffc9478f7a3a20bbcbda7f16afae72010c0a"
+      sha256 "95dcb390e6c0f7c24e52f89888b213040030c1803bb9281b97373ad2e53b663e"
 
       def install
         bin.install "awx"
@@ -19,7 +19,7 @@ class AirwallexCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.26/airwallex-cli_0.2.26_darwin_arm64.tar.gz"
-      sha256 "4ecccbce918c9f3f2c4f1835556dbb5b90003973b7db1d9779ffd58d3c8ba6bd"
+      sha256 "ebaba400325373d28aa865ecd962592e930bec1547d0a82d6020a9092fd60a46"
 
       def install
         bin.install "awx"
@@ -30,14 +30,14 @@ class AirwallexCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.26/airwallex-cli_0.2.26_linux_amd64.tar.gz"
-      sha256 "9ab5b5bf39b49099c8b47951d2bd13f07c73274ea43d02d51f3f0800c329d52d"
+      sha256 "760d8f00ae9aeb0bfab70190b79dff8bcdd333532764d7e4cd9fa76c7a0d092f"
       def install
         bin.install "awx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.26/airwallex-cli_0.2.26_linux_arm64.tar.gz"
-      sha256 "03e569c9ed8afe76fe383a3e0ea52ccb31a7cc824acba28c226d9bd311e0b221"
+      sha256 "52f050906b1ecd9d4d7b6c7300b2bf08e65f0392ecbc668407f5450dd09c19d5"
       def install
         bin.install "awx"
       end
