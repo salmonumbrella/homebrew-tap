@@ -5,21 +5,21 @@
 class ShoplineCli < Formula
   desc "CLI for Shopline e-commerce platform"
   homepage "https://github.com/salmonumbrella/shopline-cli"
-  version "0.7.11"
+  version "0.7.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.11/shopline-cli_darwin_amd64.tar.gz"
-      sha256 "ba76f8c5ab3a92923a3bb01873e0642a2a066d213e2145d9b88a8fbdc8d3fff0"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.12/shopline-cli_darwin_amd64.tar.gz"
+      sha256 "9f6c83af724e1768be9242d122af7a1d5aafda9f67a2674902c08770eed7fd2d"
 
       def install
         bin.install "spl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.11/shopline-cli_darwin_arm64.tar.gz"
-      sha256 "fc37a16a0ec3ef3da37a34e6b52a442ac896f28e696777cfb7a012f6291e87a1"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.12/shopline-cli_darwin_arm64.tar.gz"
+      sha256 "a96e4ba1a500ca82066b36a92b577b318ac4042155e5bbeb96e021d7b86f935e"
 
       def install
         bin.install "spl"
@@ -29,15 +29,15 @@ class ShoplineCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.11/shopline-cli_linux_amd64.tar.gz"
-      sha256 "496f9cd3fd0592fdbb177a191e80627e3a0419848ef4ca3107c906b04500cc7e"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.12/shopline-cli_linux_amd64.tar.gz"
+      sha256 "d7dfec0bfe53b96289a7f30f0aecbcf76bbdf693d8eaffced42f19291d0dfa35"
       def install
         bin.install "spl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.11/shopline-cli_linux_arm64.tar.gz"
-      sha256 "1cbda6f1e72d932772fcb9359a1970c203433de37c91ff3b78b78e35f7689f19"
+      url "https://github.com/salmonumbrella/shopline-cli/releases/download/v0.7.12/shopline-cli_linux_arm64.tar.gz"
+      sha256 "6feadf55c529d0ae3b87b8421b43185e3f50a51d1de4316283c41f9fdb951e54"
       def install
         bin.install "spl"
       end
