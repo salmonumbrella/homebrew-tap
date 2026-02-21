@@ -11,7 +11,7 @@ class ChatwootCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.32/chatwoot-cli_0.2.32_darwin_amd64.tar.gz"
-      sha256 "238ba2ff3b82e7a9b523ebcaa10e62bc5e766b3ad2046829e1397e2c955d7a08"
+      sha256 "bb3e1f48ff5c4fb30c2fb203568f40b2e5938c057c8d816fa3f2ff0425514311"
 
       def install
         bin.install "cw"
@@ -19,7 +19,7 @@ class ChatwootCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.32/chatwoot-cli_0.2.32_darwin_arm64.tar.gz"
-      sha256 "41d81ce54fa8a8065f70df4a5d29d63944a8d4abde48b95acc5c0c3830e7b784"
+      sha256 "2c3ea74ee410ebf0d629d4b6054b4b3a9182924f68e98d4474eca43176588173"
 
       def install
         bin.install "cw"
@@ -30,14 +30,14 @@ class ChatwootCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.32/chatwoot-cli_0.2.32_linux_amd64.tar.gz"
-      sha256 "838c389205d2415318bce6e8a4cbfbb7586889930b9f63f8b9100ff94af330d8"
+      sha256 "3f307bcd24656afe9665082b821abaa537fd2d69d66453216facf18bae7a8d8c"
       def install
         bin.install "cw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/chatwoot-cli/releases/download/v0.2.32/chatwoot-cli_0.2.32_linux_arm64.tar.gz"
-      sha256 "be366fa7c7c8b8556d108d6809a705ed8719e7fb4729e28c840c8bdc62b520b4"
+      sha256 "ca83d93300b674c50ed053ef3d31e74ec5bf17119ba719a64ff30e3bbd9da2e4"
       def install
         bin.install "cw"
       end
