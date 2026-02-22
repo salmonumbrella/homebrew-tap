@@ -5,23 +5,23 @@
 class ThreadsCli < Formula
   desc "CLI for Threads API by Meta - manage posts, replies, insights"
   homepage "https://github.com/salmonumbrella/threads-cli"
-  version "1.4.3"
+  version "1.4.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.3/threads_1.4.3_darwin_amd64.tar.gz"
-      sha256 "2e5a4fe2f469c28a2b5e59091b6168fe3c736523413c4d55e6c3671da8a0c50e"
+      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.4/threads_1.4.4_darwin_amd64.tar.gz"
+      sha256 "6b9909152dea7aa58c7de76be08a39520f4436370687c8b244cd27a8684603a6"
 
-      def install
+      define_method(:install) do
         bin.install "threads"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.3/threads_1.4.3_darwin_arm64.tar.gz"
-      sha256 "467e175e0b894e5a84a54761a378bc4541bb37c9eb5a5a4814fe261763252eaf"
+      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.4/threads_1.4.4_darwin_arm64.tar.gz"
+      sha256 "9f474693f73b443075353f68987ab3b3dff19bf72efb44be96faa8026c4de747"
 
-      def install
+      define_method(:install) do
         bin.install "threads"
       end
     end
@@ -29,16 +29,16 @@ class ThreadsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.3/threads_1.4.3_linux_amd64.tar.gz"
-      sha256 "2bc9442f78f31fb8e8a95584c5a2ea78f3fcb8a417197843f4f70fb5c5ac4173"
-      def install
+      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.4/threads_1.4.4_linux_amd64.tar.gz"
+      sha256 "c3c76a6fa21bd197f096a474d7c6f2fff17faa0d945299b26081d3d74b20cca5"
+      define_method(:install) do
         bin.install "threads"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.3/threads_1.4.3_linux_arm64.tar.gz"
-      sha256 "6698f15c02a6371c1289b7d48798cfdc364e47e190558757a67cd618805af9ac"
-      def install
+      url "https://github.com/salmonumbrella/threads-cli/releases/download/v1.4.4/threads_1.4.4_linux_arm64.tar.gz"
+      sha256 "9d27025ca0be7e4ce9083f2cc32c3e475a806f752d098d9fb0ff63609b382419"
+      define_method(:install) do
         bin.install "threads"
       end
     end
