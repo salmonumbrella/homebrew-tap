@@ -5,21 +5,21 @@
 class FastmailCli < Formula
   desc "CLI for Fastmail to manage emails, folders, and masked addresses"
   homepage "https://github.com/salmonumbrella/fastmail-cli"
-  version "0.2.12"
+  version "0.2.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.12/fastmail_0.2.12_darwin_amd64.tar.gz"
-      sha256 "c1c9b0411cfcc6a754e0f702824b6b9eec32f7a4af1c52033fc904d9cdf19f66"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.13/fastmail_0.2.13_darwin_amd64.tar.gz"
+      sha256 "43b2687c9ea13df7d204c82dee94c7de21f6fb265be8fb94b2af4f6e0ad651cf"
 
       define_method(:install) do
         bin.install "fastmail"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.12/fastmail_0.2.12_darwin_arm64.tar.gz"
-      sha256 "d11a034ff7ead98b186b600045473a6ceafe13a667cc6203703fff26cbb972b2"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.13/fastmail_0.2.13_darwin_arm64.tar.gz"
+      sha256 "87e040dcdf1dd62682642e95113cd3384439c7c010bb83da1d228367684ff9b4"
 
       define_method(:install) do
         bin.install "fastmail"
@@ -29,15 +29,15 @@ class FastmailCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.12/fastmail_0.2.12_linux_amd64.tar.gz"
-      sha256 "b40cc6bc30487fcb71c7f5ac431b90f998b6447abb657ce6d020a0eb3018dd48"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.13/fastmail_0.2.13_linux_amd64.tar.gz"
+      sha256 "d17a6507bb3edfd7d818000fdb2f35bc1265c305645cbf70a01aaa9e928adba7"
       define_method(:install) do
         bin.install "fastmail"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.12/fastmail_0.2.12_linux_arm64.tar.gz"
-      sha256 "0d40d9b25255c6450676267f77a77b50a95cf736ba40ccb9d9f4a326c2a1d035"
+      url "https://github.com/salmonumbrella/fastmail-cli/releases/download/v0.2.13/fastmail_0.2.13_linux_arm64.tar.gz"
+      sha256 "58824a38f532ce1fc530a812a87dc5d7006b49485ef11f142151a131acb102a0"
       define_method(:install) do
         bin.install "fastmail"
       end
