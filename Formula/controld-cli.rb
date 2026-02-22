@@ -1,5 +1,5 @@
-class ControldCli < Formula
-  desc "CLI for ControlD DNS management - manage devices, profiles, and DNS filtering"
+class UcontroldUcli < Formula
+  desc "CLI for ControlD DNS management API"
   homepage "https://github.com/salmonumbrella/controld-cli"
   version "0.1.2"
   license "MIT"
@@ -7,22 +7,22 @@ class ControldCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.2/controld-cli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "384193ab3f0de4d2ba945230a0e92b62ec62470923b15e73a10165e72cbeb224"
+      sha256 "ee7870142aa6f3b1c0604528fe50db6e3ad3682db1a3ba89bc811eff7f57c499"
     end
     on_intel do
       url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.2/controld-cli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "fe3be12be0d3c7b87217ee300a2bede5a45176322d8057cb171a0d100e84e246"
+      sha256 "7ab39cc81d0bf3cbda71fa6ebd42127ae5379f2ba26530442569dc84b90968f0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.2/controld-cli_0.1.2_linux_arm64.tar.gz"
-      sha256 "ead409aaf72ae43b0ae38f28d03b0a54585956350c6958446d61a2dca9d6b453"
+      sha256 "b285cdd00957cb9c8d1859e38d1d71ba9c842d57be71fe4eebb9ad0c1b4eb321"
     end
     on_intel do
       url "https://github.com/salmonumbrella/controld-cli/releases/download/v0.1.2/controld-cli_0.1.2_linux_amd64.tar.gz"
-      sha256 "05a90586ce7973be514f7f8c5e1f4b139aec1d708d37f6b0036b8bbfe7ccffd7"
+      sha256 "8c737908dee82202b4a6df442ad5895b274395437a04c9cff7ca6112fda253e8"
     end
   end
 

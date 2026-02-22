@@ -1,11 +1,8 @@
-# typed: false
-# frozen_string_literal: true
-
 class LineOfficialCli < Formula
   desc "CLI for LINE Official Account / Messaging API"
   homepage "https://github.com/salmonumbrella/line-official-cli"
-  url "https://github.com/salmonumbrella/line-official-cli/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "86c870b88a92b03116fa7f0cbb3b32286825286222d715d056f7495b7ea6201b"
+  url "https://github.com/salmonumbrella/line-official-cli/archive/refs/tags/v0.4.2.tar.gz"
+  sha256 "a0a8b90d96affe188f1baf2993ba6db7cf3f043fe2a944bd024f7b9c01907aa7"
   license "MIT"
   depends_on "go" => :build
 
