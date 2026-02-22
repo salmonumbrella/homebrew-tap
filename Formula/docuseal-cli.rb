@@ -5,23 +5,23 @@
 class DocusealCli < Formula
   desc "CLI for DocuSeal to manage documents, submissions, and templates"
   homepage "https://github.com/salmonumbrella/docuseal-cli"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.3/docuseal_0.2.3_darwin_amd64.tar.gz"
-      sha256 "510c8bde95fa02ccd45cbcb95661be7e7e2322a7d1c7e0b5d2be31ec5b830aaa"
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.4/docuseal_0.2.4_darwin_amd64.tar.gz"
+      sha256 "56dc82b31d3830a7b84142b56d78be5c6dc61fc4b91ee9890480d7c571d338c6"
 
-      def install
+      define_method(:install) do
         bin.install "docuseal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.3/docuseal_0.2.3_darwin_arm64.tar.gz"
-      sha256 "a52220ffb916f031b49c6f0f9f845701fc208e5bd859f35c536428694b9663f4"
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.4/docuseal_0.2.4_darwin_arm64.tar.gz"
+      sha256 "a32912fea25da6445ef8b615d180bcb6e826b4cb77cb29cdb5646b9357a77c5a"
 
-      def install
+      define_method(:install) do
         bin.install "docuseal"
       end
     end
@@ -29,16 +29,16 @@ class DocusealCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.3/docuseal_0.2.3_linux_amd64.tar.gz"
-      sha256 "42749cd5c1519f15c506ef182a0821f1878e45d96e54b98ab4475a90981797f6"
-      def install
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.4/docuseal_0.2.4_linux_amd64.tar.gz"
+      sha256 "02e12726691b9c221f6739ee53b0d75dff533f4598c217922c54cf595fbdaef2"
+      define_method(:install) do
         bin.install "docuseal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.3/docuseal_0.2.3_linux_arm64.tar.gz"
-      sha256 "2f0561b10d2ead414419c20edf92a8a802ded8698552a9f9b39d92d45f4f4921"
-      def install
+      url "https://github.com/salmonumbrella/docuseal-cli/releases/download/v0.2.4/docuseal_0.2.4_linux_arm64.tar.gz"
+      sha256 "dc4cae6d20e9bd8ea8531987b1c96c8f01791f857677551c8f58faecc1574d4e"
+      define_method(:install) do
         bin.install "docuseal"
       end
     end
