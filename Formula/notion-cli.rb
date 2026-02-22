@@ -1,4 +1,4 @@
-class UnotionUcli < Formula
+class NotionCli < Formula
   desc "Command-line interface for the Notion API"
   homepage "https://github.com/salmonumbrella/notion-cli"
   version "0.5.29"

@@ -1,4 +1,4 @@
-class UfastmailUcli < Formula
+class FastmailCli < Formula
   desc "Fastmail CLI for email, masked addresses, calendars"
   homepage "https://github.com/salmonumbrella/fastmail-cli"
   version "0.2.13"

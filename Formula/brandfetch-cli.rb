@@ -1,4 +1,4 @@
-class UbrandfetchUcli < Formula
+class BrandfetchCli < Formula
   desc "Brandfetch CLI"
   homepage "https://github.com/salmonumbrella/brandfetch-cli"
   version "0.1.4"

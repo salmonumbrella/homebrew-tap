@@ -1,4 +1,4 @@
-class UdubUcli < Formula
+class DubCli < Formula
   desc "CLI for Dub.co links, domains, analytics"
   homepage "https://github.com/salmonumbrella/dub-cli"
   version "0.1.4"

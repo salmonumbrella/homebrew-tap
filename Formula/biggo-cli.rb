@@ -1,4 +1,4 @@
-class UbiggoUcli < Formula
+class BiggoCli < Formula
   desc "BigGo price comparison CLI"
   homepage "https://github.com/salmonumbrella/biggo-cli"
   version "0.1.4"

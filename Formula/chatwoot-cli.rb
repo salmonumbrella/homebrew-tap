@@ -1,4 +1,4 @@
-class UchatwootUcli < Formula
+class ChatwootCli < Formula
   desc "Chatwoot CLI - Chatwoot in your terminal"
   homepage "https://github.com/salmonumbrella/chatwoot-cli"
   version "0.2.40"

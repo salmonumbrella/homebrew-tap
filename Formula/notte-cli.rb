@@ -1,4 +1,4 @@
-class UnotteUcli < Formula
+class NotteCli < Formula
   desc "Browser automation in your terminal"
   homepage "https://github.com/salmonumbrella/notte-cli"
   version "0.1.6"

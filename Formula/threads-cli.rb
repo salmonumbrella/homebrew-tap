@@ -1,4 +1,4 @@
-class UthreadsUcli < Formula
+class ThreadsCli < Formula
   desc "Go CLI for Meta Threads API"
   homepage "https://github.com/salmonumbrella/threads-cli"
   version "1.4.6"

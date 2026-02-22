@@ -1,4 +1,4 @@
-class UcontroldUcli < Formula
+class ControldCli < Formula
   desc "CLI for ControlD DNS management API"
   homepage "https://github.com/salmonumbrella/controld-cli"
   version "0.1.2"

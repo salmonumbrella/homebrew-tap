@@ -1,4 +1,4 @@
-class UdeelUcli < Formula
+class DeelCli < Formula
   desc "Deel CLI - Workforce management in your terminal"
   homepage "https://github.com/salmonumbrella/deel-cli"
   version "0.5.18"

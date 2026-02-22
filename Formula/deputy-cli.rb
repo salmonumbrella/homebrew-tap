@@ -1,4 +1,4 @@
-class UdeputyUcli < Formula
+class DeputyCli < Formula
   desc "Deputy workforce management CLI"
   homepage "https://github.com/salmonumbrella/deputy-cli"
   version "0.1.16"

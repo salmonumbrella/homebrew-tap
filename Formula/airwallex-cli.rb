@@ -1,4 +1,4 @@
-class UairwallexUcli < Formula
+class AirwallexCli < Formula
   desc "Airwallex CLI - Banking in your terminal"
   homepage "https://github.com/salmonumbrella/airwallex-cli"
   version "0.2.28"

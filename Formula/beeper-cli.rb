@@ -1,4 +1,4 @@
-class UbeeperUcli < Formula
+class BeeperCli < Formula
   desc "Beeper CLI"
   homepage "https://github.com/salmonumbrella/beeper-cli"
   version "0.2.15"

@@ -1,4 +1,4 @@
-class UeightsleepUcli < Formula
+class EightsleepCli < Formula
   desc "Control your Eight Sleep Pod from the terminal"
   homepage "https://github.com/salmonumbrella/eightsleep-cli"
   version "0.2.7"
