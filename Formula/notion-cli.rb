@@ -5,21 +5,21 @@
 class NotionCli < Formula
   desc "CLI for Notion API"
   homepage "https://github.com/salmonumbrella/notion-cli"
-  version "0.5.27"
+  version "0.5.28"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.27/notion_0.5.27_darwin_amd64.tar.gz"
-      sha256 "27272f2ed66ef8a2942414102c506402504d43eb1fae2228623d42a2e29d1c1a"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.28/notion_0.5.28_darwin_amd64.tar.gz"
+      sha256 "83c46b08cc9262dc423af99edae76edb74fbb132262b58e34299586681ca4b6b"
 
       define_method(:install) do
         bin.install "ntn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.27/notion_0.5.27_darwin_arm64.tar.gz"
-      sha256 "ce7852f2489750a594487438de7d2221032bf00695a30997f00cab394df1a0b5"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.28/notion_0.5.28_darwin_arm64.tar.gz"
+      sha256 "350acecebec0f83f8f00ba7b3432df3e4a43c63e5ea5f69355d689d14aececd9"
 
       define_method(:install) do
         bin.install "ntn"
@@ -29,15 +29,15 @@ class NotionCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.27/notion_0.5.27_linux_amd64.tar.gz"
-      sha256 "1a808a46a54820f51ae2c1fc079c1611328c6fb7a1aba85b214032d8db80bf6d"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.28/notion_0.5.28_linux_amd64.tar.gz"
+      sha256 "1363342b3f0750a3796f2ebbbd3e2ca232ec5629b482e2f088bd33c44256fe6d"
       define_method(:install) do
         bin.install "ntn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.27/notion_0.5.27_linux_arm64.tar.gz"
-      sha256 "c5ceb74dfa7d7e8139c9c1bab88a0a80619a1d0592477c89cd90eb89c6c74aca"
+      url "https://github.com/salmonumbrella/notion-cli/releases/download/v0.5.28/notion_0.5.28_linux_arm64.tar.gz"
+      sha256 "12501853e6d6c187cac84cedfe6f3e6174004ca614d93607a49b47518fc1296d"
       define_method(:install) do
         bin.install "ntn"
       end
