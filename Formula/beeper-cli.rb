@@ -5,23 +5,23 @@
 class BeeperCli < Formula
   desc "CLI for interacting with Beeper Desktop's local API"
   homepage "https://github.com/salmonumbrella/beeper-cli"
-  version "0.2.13"
+  version "0.2.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.13/beeper-cli_0.2.13_darwin_amd64.tar.gz"
-      sha256 "724361077170a1dda99f8a4315c786688bb05017d6b40f7757bf177bd0d64de5"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.15/beeper-cli_0.2.15_darwin_amd64.tar.gz"
+      sha256 "9f6993b91d9223ffe53f62a922f8bad12dec943525be23eca132dd151897e808"
 
-      def install
+      define_method(:install) do
         bin.install "beeper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.13/beeper-cli_0.2.13_darwin_arm64.tar.gz"
-      sha256 "758ec2ab31afb319fff01269eb6f5c0ffe20886ec7c352ce5a20de67d4126bf8"
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.15/beeper-cli_0.2.15_darwin_arm64.tar.gz"
+      sha256 "04330e6751691f84471c4f06b988c3bd2f8951aa383299d6a21db89e58303aed"
 
-      def install
+      define_method(:install) do
         bin.install "beeper"
       end
     end
@@ -29,16 +29,16 @@ class BeeperCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.13/beeper-cli_0.2.13_linux_amd64.tar.gz"
-      sha256 "d2f1ba12ec0e146702a8db7d27021aee402aee9a8126d0d9ff9d431990a5f226"
-      def install
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.15/beeper-cli_0.2.15_linux_amd64.tar.gz"
+      sha256 "00908b1156ff37a97921c1b53473ed60fd45ed71bd188d00ef00942dc17a4d09"
+      define_method(:install) do
         bin.install "beeper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.13/beeper-cli_0.2.13_linux_arm64.tar.gz"
-      sha256 "b194739c5c429c0437126b26a69b03e148fb41c952508082434f90e00675b9b5"
-      def install
+      url "https://github.com/salmonumbrella/beeper-cli/releases/download/v0.2.15/beeper-cli_0.2.15_linux_arm64.tar.gz"
+      sha256 "e2a79d3e647450b811f2257a68ce51c0df63a2564b2fb7610d4d4493d9086dc4"
+      define_method(:install) do
         bin.install "beeper"
       end
     end
