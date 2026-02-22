@@ -5,21 +5,21 @@
 class DeputyCli < Formula
   desc "CLI for Deputy to manage employees, timesheets, rosters, and leave"
   homepage "https://github.com/salmonumbrella/deputy-cli"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.14/deputy-cli_0.1.14_darwin_amd64.tar.gz"
-      sha256 "db9cf7a572a3482cffed0ed7b1da9996ac8c8986e00400c5999ce8ad8a28f178"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.15/deputy-cli_0.1.15_darwin_amd64.tar.gz"
+      sha256 "bd35e7139bf7839bf69e8f8e516691409c2c14ce765b1a5a0b9ef9165a311be0"
 
       define_method(:install) do
         bin.install "deputy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.14/deputy-cli_0.1.14_darwin_arm64.tar.gz"
-      sha256 "46d1d984531517cdecaae0d2ef35d086d148c1a1653a56366bb90123efa67e74"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.15/deputy-cli_0.1.15_darwin_arm64.tar.gz"
+      sha256 "0c37418e2b4762be6f37ff7ede688bd5fe2cfb9305fffe25e86bafe8b4d50e5f"
 
       define_method(:install) do
         bin.install "deputy"
@@ -29,15 +29,15 @@ class DeputyCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.14/deputy-cli_0.1.14_linux_amd64.tar.gz"
-      sha256 "81eaf50df28cda6abef9e75d325ab6fac701ef527e2e2b7487af8503f44eacc8"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.15/deputy-cli_0.1.15_linux_amd64.tar.gz"
+      sha256 "ccbb9efa0c62b62b11e8c5a1bda2b2236620db5e58f23276c601902f1064e244"
       define_method(:install) do
         bin.install "deputy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.14/deputy-cli_0.1.14_linux_arm64.tar.gz"
-      sha256 "d3c4244cc6c298a78176c49781a1ae27bdc4c244c5197cea224813d9e16b060f"
+      url "https://github.com/salmonumbrella/deputy-cli/releases/download/v0.1.15/deputy-cli_0.1.15_linux_arm64.tar.gz"
+      sha256 "d6f249fa624181b3a799df00680f02b6d4d1420ca3e1721b14836bd3d3de97fd"
       define_method(:install) do
         bin.install "deputy"
       end
