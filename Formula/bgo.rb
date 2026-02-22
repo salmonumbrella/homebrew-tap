@@ -5,21 +5,21 @@
 class Bgo < Formula
   desc "BigGo price comparison CLI - search products, track prices, and analyze deals"
   homepage "https://github.com/salmonumbrella/biggo-cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.3/bgo_0.1.3_darwin_amd64.tar.gz"
-      sha256 "15ae8f5c3e841cf2cf6075c347c2d06158640dd734d917435bebcffe315e7cb7"
+      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.4/bgo_0.1.4_darwin_amd64.tar.gz"
+      sha256 "c6c2ad446dc475f587d114e60e4b11fee7a73fbd7671c8fbfbb2883188e6017a"
 
       define_method(:install) do
         bin.install "bgo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.3/bgo_0.1.3_darwin_arm64.tar.gz"
-      sha256 "b71d845af211b1089d0b6b65483c50fc5b9bb9565a1dbfcd24bf46f824cd872e"
+      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.4/bgo_0.1.4_darwin_arm64.tar.gz"
+      sha256 "cbb1c91f9cb8b4628c4abc55b7ebaaba1415eb625f0c60d8ca7ebf8a16d57380"
 
       define_method(:install) do
         bin.install "bgo"
@@ -29,15 +29,15 @@ class Bgo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.3/bgo_0.1.3_linux_amd64.tar.gz"
-      sha256 "5b400a6a548ca1c285153749c297da903d2625899e7fb122130bd3305b02bc01"
+      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.4/bgo_0.1.4_linux_amd64.tar.gz"
+      sha256 "6d49476da442925e498d1e85848cb1f798c32793b2b4d358d3463db32532ee48"
       define_method(:install) do
         bin.install "bgo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.3/bgo_0.1.3_linux_arm64.tar.gz"
-      sha256 "0595723ed664afe27f5d98c20d03a647cb6226e7d18b9af710efd8847313e42e"
+      url "https://github.com/salmonumbrella/biggo-cli/releases/download/v0.1.4/bgo_0.1.4_linux_arm64.tar.gz"
+      sha256 "9ecd4bcf7370364e880ed770742e95ca46eaedf2b604d98775a13f1bf3bd1c79"
       define_method(:install) do
         bin.install "bgo"
       end
