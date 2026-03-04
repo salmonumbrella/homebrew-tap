@@ -11,7 +11,7 @@ class DeelCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.20/deel_0.5.20_darwin_amd64.tar.gz"
-      sha256 "97f934f5bcfd2ecf57ca39de7410c8660012083a2759300716bfc07e3747659d"
+      sha256 "bd780318f072888e99fe4166e3c0b68513b3bfb244ff196da8367fd2d6069565"
 
       define_method(:install) do
         bin.install "deel"
@@ -19,7 +19,7 @@ class DeelCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.20/deel_0.5.20_darwin_arm64.tar.gz"
-      sha256 "b2d8e8441e54c2afbcb5b8a9731163a7e70605ec52dd9236c8f118801555f115"
+      sha256 "148ea0d540405b5a12ae41882d4c30ba955a73470a128f29bd957100989ce36f"
 
       define_method(:install) do
         bin.install "deel"
@@ -30,14 +30,14 @@ class DeelCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.20/deel_0.5.20_linux_amd64.tar.gz"
-      sha256 "25340d4d1885e7d335a151535801aa88e7cdbe1db84e1ad8f68f694de62d47e0"
+      sha256 "7d8da064c136752fc0dfcda3d2361ef33edb477e035bb347780b27b5897e4f8e"
       define_method(:install) do
         bin.install "deel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/salmonumbrella/deel-cli/releases/download/v0.5.20/deel_0.5.20_linux_arm64.tar.gz"
-      sha256 "7ad54ebd686b40f21c8ce9181f688f41ef63f8d0df96f6efceca90932294f087"
+      sha256 "9ea65e8a6d8d1cb9c84ddd8f097955bfc70d3c32c450e0effd754c991535deba"
       define_method(:install) do
         bin.install "deel"
       end
