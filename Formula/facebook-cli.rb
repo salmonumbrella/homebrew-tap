@@ -5,21 +5,21 @@
 class FacebookCli < Formula
   desc "CLI for Facebook Graph API to manage pages, posts, ads, and analytics"
   homepage "https://github.com/salmonumbrella/facebook-cli"
-  version "0.1.0"
+  version "3.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v0.1.0/facebook-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e7c8cf829985890aa8dd5c4f4c36cfd2e36b5718bd3662b976838997375cc158"
+      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v3.0.1/facebook-cli_3.0.1_darwin_amd64.tar.gz"
+      sha256 "d6e2ff7af602248f2fd0c9ffb5ec6686b1f1aa97856aeb2423e4b538ac49c9b4"
 
       define_method(:install) do
         bin.install "fbcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v0.1.0/facebook-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "76bb68509c32584379f0ab5e7fe50411c8a2363475c707e67f8892a979efabd3"
+      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v3.0.1/facebook-cli_3.0.1_darwin_arm64.tar.gz"
+      sha256 "6a508dcfc2f5103b7f54d5d8569deba3b2bc9c99a2e5a40c618f963b04e32e77"
 
       define_method(:install) do
         bin.install "fbcli"
@@ -29,15 +29,15 @@ class FacebookCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v0.1.0/facebook-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "8b4b991f2adc76f2af09cc6b460f96c2e7ac9a6f2ff7a29a3543def3e70e2c26"
+      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v3.0.1/facebook-cli_3.0.1_linux_amd64.tar.gz"
+      sha256 "0f31dc308d23ef70f8c5705cc4c511cf4216bafa2585e2e2f9c05130afb25bd6"
       define_method(:install) do
         bin.install "fbcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v0.1.0/facebook-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "58bb2d7a63f9bcba231f2632c3f68f862e9d93c732bd1d0c7f0a94e55702bc69"
+      url "https://github.com/salmonumbrella/facebook-cli/releases/download/v3.0.1/facebook-cli_3.0.1_linux_arm64.tar.gz"
+      sha256 "78b3715b1bf5d8c9d26d362f5dc151603fd829c43233a6a2f5f5bdfadb28c5cc"
       define_method(:install) do
         bin.install "fbcli"
       end
