@@ -5,21 +5,21 @@
 class AirwallexCli < Formula
   desc "CLI for Airwallex to manage transfers, beneficiaries, and balances"
   homepage "https://github.com/salmonumbrella/airwallex-cli"
-  version "0.2.30"
+  version "0.2.31"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.30/airwallex-cli_0.2.30_darwin_amd64.tar.gz"
-      sha256 "5a0302e387be951d4ea50de1ebce96b19dae45b8d825733403cc5e92a73c6384"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.31/airwallex-cli_0.2.31_darwin_amd64.tar.gz"
+      sha256 "83dcd9257d65285a4afb1f72cd52b679e7e1fb3a072a72858aba0a0f1b1ccc0a"
 
       define_method(:install) do
         bin.install "awx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.30/airwallex-cli_0.2.30_darwin_arm64.tar.gz"
-      sha256 "e3f552a82d1e9a12236b311db37f17164662a1634e7c074479abcce579a4a038"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.31/airwallex-cli_0.2.31_darwin_arm64.tar.gz"
+      sha256 "1f9b946ade8156d9918e2b660aab665815ad251a888bd138d70df0ba348bd7f1"
 
       define_method(:install) do
         bin.install "awx"
@@ -29,15 +29,15 @@ class AirwallexCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.30/airwallex-cli_0.2.30_linux_amd64.tar.gz"
-      sha256 "9edca4e5b19ab7f628aa71a6fa753b9767bf5e7235f15f1c2a697b3072815690"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.31/airwallex-cli_0.2.31_linux_amd64.tar.gz"
+      sha256 "71cc42602e422ac486aa5896d8e58072630610151828474f8bdb35add4e50e92"
       define_method(:install) do
         bin.install "awx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.30/airwallex-cli_0.2.30_linux_arm64.tar.gz"
-      sha256 "dceabc4dd010814573cba255ffb82ac047126d407d1f8551e687fe10376fbded"
+      url "https://github.com/salmonumbrella/airwallex-cli/releases/download/v0.2.31/airwallex-cli_0.2.31_linux_arm64.tar.gz"
+      sha256 "770c47823f6dab3e8fcaa8ffefde735ebc87be19aa374812005aba3aaed839aa"
       define_method(:install) do
         bin.install "awx"
       end
